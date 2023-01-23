@@ -1,5 +1,16 @@
 \babel@toc {norsk}{}\relax 
-\contentsline {part}{I\hspace {1em}Historisk Utvikling}{3}{part.1}%
-\contentsline {section}{\numberline {1}Bruddet med Klassisk Fysikk}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Hva er Kvantemekanikk?}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Enheter i Kvantefysikk}{4}{subsection.1.2}%
+\contentsline {part}{I\hspace {1em}Historisk Utvikling}{2}{part.1}%
+\contentsline {chapter}{\numberline {1}Bruddet med Klassisk Fysikk}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Hva er Kvantemekanikk?}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Energikvantisering}{3}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Bølge-Partikkel-dualitet}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Egentilstand og superposisjon}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Heisenberg's uskarphetsrelasjon}{4}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Paulis eksklusjonsprinsipp}{4}{subsection.1.1.5}%
+\contentsline {section}{\numberline {1.2}Enheter i Kvantefysikk}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Lengde}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Energi}{4}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Masse}{5}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Andre Konstanter}{5}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Coulomb-potensialet}{5}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Nyttige Tabeller}{5}{subsection.1.2.6}%
