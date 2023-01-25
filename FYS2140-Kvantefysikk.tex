@@ -7,6 +7,7 @@
 \newtheorem{theorem}{Theorem}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{pgfplots}
+\pgfplotsset{compat/show suggested version=false}
 \setlength{\parindent}{0cm}
 \usepackage{graphics}
 \usepackage{graphicx} % Required for including images
@@ -38,6 +39,7 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\pagecolor[rgb]{0.075,0.075,0.075} \color[rgb]{1,1,1} %TODO: Slett når ferdig%
 
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
@@ -62,11 +64,23 @@
 \author{Oskar Idland}
 \title{FYS2140 - Kvantefysikk}
 \date{}
+
 \begin{document}
 \maketitle
 \newpage
 \tableofcontents
 \newpage
 \include{Historisk Utvikling}
-
+\include{Kvantemekanikkens matematiske spraak}
+\include{Andvendelser}
+\part{Lecture Notes}
+\include{02 Forelesnings Notater}
+\include{03 Forelesnings Notater}
+\include{04 Forelesnings Notater}
+\include{05 Forelesnings Notater}
+\include{06 Forelesnings Notater}
+\include{07 Forelesnings Notater}
+\include{08 Forelesnings Notater}
+\include{09 Forelesnings Notater}
+\include{10 Forelesnings Notater}
 \end{document}
