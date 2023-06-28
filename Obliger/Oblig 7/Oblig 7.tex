@@ -1,0 +1,227 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{enumerate}
+\newtheorem{theorem}{Theorem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\setlength{\parindent}{0cm}
+\usepackage{graphics}
+\usepackage{graphicx} % Required for including images
+\usepackage{subcaption}
+\usepackage{bigintcalc}
+\usepackage{pythonhighlight} %for pythonkode \begin{python}   \end{python}
+\usepackage{appendix}
+\usepackage{arydshln}
+\usepackage{physics}
+\usepackage{tikz-cd}
+\usepackage{booktabs} 
+\usepackage{adjustbox}
+\usepackage{mdframed}
+\usepackage{relsize}
+\usepackage{physics}
+\usepackage[thinc]{esdiff}
+\usepackage{fixltx2e}
+\usepackage{esint}  %for lukket-linje-integral
+\usepackage{xfrac} %for sfrac
+\usepackage{hyperref} %for linker, må ha med hypersetup
+\usepackage[noabbrev, nameinlink]{cleveref} % to be loaded after hyperref
+\usepackage{amssymb} %\mathbb{R} for reelle tall, \mathcal{B} for "matte"-font
+\usepackage{listings} %for kode/lstlisting
+\usepackage{verbatim}
+\usepackage{graphicx,wrapfig,lipsum,caption} %for wrapping av bilder
+\usepackage{mathtools} %for \abs{x}
+\usepackage[norsk]{babel}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\author{Oskar Idland}
+\title{Oblig 7}
+\date{}
+\begin{document}
+\maketitle
+\newpage
+
+\section*{\underline{A Diskusjonsoppgaver}}
+\subsection*{Oppgave 1}
+\subsubsection*{a)}
+Vi bruker utrykket for bølgefunksjonen til en fri partikkel som beskrevet i likning 2.95 i Griffiths.
+\[
+ψ(x) = Ψ(x,0) = Ae^{i\left(kx - \frac{ℏk^2}{2m} ⋅ 0\right)} = Ae^{ikx}
+\]
+
+\subsubsection*{b)}
+For å utvide dette til den tidsavhengige bølgefunksjonen gjør vi følgende: 
+\[
+Ψ(x,t) = Ae^{i\left(kx - \frac{ℏk^2}{2m}t\right)}
+\]
+
+\subsubsection*{c)}
+\[
+∫_{-∞}^{∞} \left|Ψ(x,t)\right|^2 \ \mathrm{d}x = ∫_{-∞}^{∞} \left|A\right|^2 \ \mathrm{d}x = \text{Ikke definert}
+\]
+
+\subsubsection*{d)}
+Er ikke normaliserbar og kan derfor ikke gi noe fysisk tolkning. 
+
+\subsubsection*{e)}
+Kvantefysikken løser dette ved å dele opp funksjonen til et multiplum at to funksjoner, $ψ$ som beskriver partikkelens posisjon og $ϕ$ som beskriver partikkelens bevegelsesmengde.
+
+\subsection*{Oppgave 2}
+\subsubsection*{a)}
+Svaret er \underline{alternativ B: Bredden avtar}
+
+\subsubsection*{b)}
+$Ψ(x,0)$ forteller oss alt om partikkelens tilstand, men den beskriver ingen fysisk størrelse. Tar vi kvadratet av dets absolutt verdi får vi sannsynlighets fordelingen for å finne partikkelen i et område $x$ til et annet område $x + Δx$ ved tiden $t=0$. Derfor relaterer $Ψ$ til posisjonen til partikkelen.
+
+\subsubsection*{c)}
+Vi vet fra likning 2.95 i Griffiths at $k = ± \frac{\sqrt{2mE}}{ℏ}$. Ettersom dette er en fri partikkel vet vi at potensialet $V$ er null, som gjør at energien bare er avhengig av kinetisk energi $K$. Den kinetiske energien er gitt av bevegelsesmengden $p$ til partikkelen. 
+
+\subsubsection*{d)}
+Forholdet mellom spredningen til funksjonen $f$ som relaterer til partikkelens posisjon og spredningen til funksjonen $g$ som relaterer til partikkelens bevegelsesmengde er invers proporsjonalt som forventet fra Heisenberg's usikkerhetsprinsipp. Det er fordi standardavviket til en størrelse er proporsjonalt med spredningen til den tilhørende funksjonen.
+
+\subsection*{Oppgave 3}
+\subsubsection*{a)}
+\begin{align*}
+    Ψ(x,0) = Ae^{-a\left|x\right|}\\
+    ∫_{-∞}^{∞} \left|Ae^{-a\left|x\right|}\right|^2 \ \mathrm{d}x &= 1\\
+    \left.\frac{2A^2}{-2a}e^{-2ax}\right\rvert_{0}^{∞} &= 1\\
+    \frac{A^2}{a} &= 1\\
+    A = \sqrt{a}  
+\end{align*}
+Vi får den normaliserte bølgefunksjonen $Ψ_n$
+\[
+\underline{\underline{Ψ_n(x,0) = \sqrt{a} e^{-a\left|x\right|}}}
+\]
+\subsubsection*{b)} 
+Vi bruket likning 2.104 fra Griffiths for $ϕ(k)$
+\begin{align*}
+ϕ(k) &= \frac{1}{\sqrt{2π}} ∫_{-∞}^{∞} Ψ(x,0)e^{-ikx} \ \mathrm{d}x
+\\
+ϕ(k) &= \sqrt{\frac{a}{2π}} ∫_{-∞}^{∞} e^{-a\left|x\right|} e^{- ikx}  \ \mathrm{d}x
+\\
+&\text{Vi skriver om siste faktoren på sinus og cosinus form}\\
+ϕ(k) &= \sqrt{\frac{a}{2π}} ∫_{-∞}^{∞} e^{-a\left|x\right|} \left(cos(kx) - i sin(kx)\right) \ \mathrm{d}x
+\\
+&\text{Videre endrer vi grensene på integrale
+}\\
+ϕ(k) &= 2\sqrt{\frac{a}{2π}} ∫_{0}^{∞} e^{-ax}\left(\cos(kx) - i \sin(kx)\right) \ \mathrm{d}x
+\\
+&\text{Ettersom sinus funksjonen er en odde funksjon vil denne delen av integralet forsvinne. Cosinus leddet skriver vi om til eksponensial form}\\
+ϕ(k) &= \sqrt{\frac{a}{2π}} ∫_{0}^{∞} e^{-ax} \left(e^{ikx} + e^{-ikx}\right) \ \mathrm{d}x
+\\
+ϕ(k) &= \sqrt{\frac{a}{2π}} ∫_{0}^{∞} \left(e^{x(ik - a)} + e^{-x(ik + a)}\right) \ \mathrm{d}x
+\\
+ϕ(k) &= \sqrt{\frac{a}{2π}} \left(\left.\frac{e^{x(ik-a)}}{ik - a} - \frac{e^{-x(ik+a)}}{ik + a}\right)\right\rvert_{0}^{∞}
+\\
+&\text{Evaluerer integralet og finner felles nevner}\\
+ϕ(k) &= \sqrt{\frac{a}{2π}} \left(-\frac{1}{ik-a} + \frac{1}{ik+a}\right) = \sqrt{\frac{a}{2π}} \frac{-(ik+a) + (ik-a)}{(ik)^2 - a^2}
+\\
+ϕ(k) &= \sqrt{\frac{a}{2π}} \frac{-2a}{-k^2 - a^2}\\
+ϕ(k) &= \underline{\underline{\sqrt{\frac{a}{2π}} \frac{2a}{k^2 + a^2}}}
+\end{align*}
+
+
+\subsubsection*{c)}
+Vi bruker likning 2.101 fra Griffiths for $Ψ(x,t)$ og setter inn vårt utrykk for $ϕ(k)$
+\[
+Ψ(x,t) = \frac{1}{\sqrt{2π}} ∫_{-∞}^{∞} ϕ(k) e^{i \left(kx - \frac{ℏk^2}{2m}t\right)} \ \mathrm{d}k = \frac{1}{\sqrt{2π}} 2a\sqrt{\frac{a}{2π}} ∫_{-∞}^{∞} \frac{1}{k^2 + a^2} e^{i\left(kx - \frac{ℏk^2}{2m}t\right)} \ \mathrm{d}k
+\]
+\[
+Ψ(x,t) = \frac{\sqrt{a^{3}}}{π} ∫_{-∞}^{∞} \frac{1}{k^2+a^2} e^{i\left(kx - \frac{ℏk^2}{2m}t\right)} \ \mathrm{d}k
+\]
+
+\subsubsection*{d)}
+I grensene hvor $a$ er veldig liten, vil vi ha en større usikkerhet i hvor partikkelen befinner seg, men vi har god kontroll på dets bevegelsesmengde. Dette er fordi $Ψ$ blir veldig bre, og $ϕ$ blir smal. I grensen hvor $a$ er veldig stor vil vi ha en større usikkerhet i bevegelsesmengden til partikkelen, men vi har god kontroll på hvor den befinner seg. Dette er fordi $Ψ$ blir veldig smal, og $ϕ$ blir bred.
+
+\subsection*{Oppgave 4}
+\paragraph*{$\mathbf{L_1}:$}
+\[
+- \frac{ℏ^2}{2m} \frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ_1 = E ψ_1 \quad \Bigg| ⋅ ψ_2
+\]
+\[
+- ψ_2\frac{ℏ^2}{2m} \frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ_1 = ψ_2E ψ_1
+\]
+\paragraph*{$\mathbf{L_2}:$}
+\[
+- \frac{ℏ^2}{2m} \frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ_2 = E ψ_2 \quad \Bigg| ⋅ ψ_1
+\]
+\[
+- ψ_1\frac{ℏ^2}{2m} \frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ_2 = ψ_1E ψ_2
+\]
+\newline
+\[
+L_2 - L_1 = - ψ_1\frac{ℏ^2}{2m} \frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ_2 + ψ_2\frac{ℏ^2}{2m} \frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ_1 = \underbrace{ψ_1E ψ_2 - ψ_2E ψ_1}_{0}
+\]
+\[
+- ψ_1\frac{ℏ^2}{2m} \frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ_2   + ψ_2\frac{ℏ^2}{2m} \frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ_1 = 0
+\]
+\[
+ψ_2 \frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ_1 - ψ_1 \frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ_2 = 0
+\]
+Ettersom $ψ_2 ≠ ψ_1 ≠ 0$ må $\displaystyle ψ_2 \frac{\mathrm{d}}{\mathrm{d}x} ψ_1 $ og $\displaystyle ψ_1 \frac{\mathrm{d}}{\mathrm{d}x} ψ_2 $ være konstant, slik at deres dobbelt derivert blir 0. 
+Videre vet vi at $ψ → 0$ ved $\pm∞$ for normerbare løsninger. Da vet vi at den derivert ikke er hvilken som helst konstant, men må være 0. Da kan vi skrive $ψ_2 = kψ_1$. Det betyr at løsningene ikke er distinkte. 
+
+\subsection*{Oppgave 5}
+Vi starter med Schrödingerligningen
+\[
+\frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ(x) = -k^2 ψ(x) \quad , \quad k = \frac{\sqrt{2mE}}{ℏ^2}
+\]
+
+Videre skriver vi $ψ$ på eksponensial form. 
+\[
+ψ(x) = Ae^{ikx} + Be^{-ikx}
+\]
+Vi har at $ψ(x) = ψ(x + L)$
+\[
+Ae^{ikx} + Be^{-ikx} = Ae^{ik(x+L)} + Be^{-ik(x+L)} = Ae^{ikx}e^{ikL} + Be^{-ikx}e^{-ikL}
+\]
+Dette gjelder for alle x. Videre setter vi $x=0$ for enkelheten skyld.
+\[
+A + B = Ae^{ikL} + Be^{-ikL}
+\]
+Ettersom vi kunne ha skrevet $ψ$ som en cosinus funksjon vet vi også at ligningen over stemmer for $x = \frac{π}{2k}$. 
+\[
+Ae^{iπ / 2} + B^{- iπ / 2} = Ae^{ikL} + Be^{-ikL} = 0
+\]
+\[
+iAe^{ikL} - Be^{-ikL} = iA - iB
+\]
+\[
+Ae^{ikL} - Be^{-ikL} = A - B
+\]
+\[
+2Ae^{ikL} = 2A
+\]
+Dette stemmer bare hvis $A=0$, eller $e^{ikL}=1$ for $kL = 2nπ$ der $n =  0,±1,±2,±3, \ldots $. Hvis $A=0$ må $Be^{-ikL} = B$ som gir samme resultat. Det betyr at for hver $n$ er det to løsninger $ψ_n^{+} = Ae^{i(2nπx /L)}$ og $ψ_n^{-} = Be^{-i(2nπx /L)}$, ved unntak av $n=0$ der det bare er én løsning. Ved normalisering av $\left|ψ_{\pm}\right|^2$ i intervallet $[0,L]$ får vi $A=B = 1 /\sqrt{L}$ hvor alle andre løsninger med samme energi er en lineær kombinasjon av disse. Da få rvi et utrykk for $ψ$ og energi $E$
+\[
+ψ_{±} \frac{1}{\sqrt{L}} e^{±i(3nπx / L)} \quad , \quad E = \frac{ℏ^2k^2}{2m} = \frac{ℏ^2(2nπ / L)^2}{2m}
+\]
+
+Teoremet krever at $ψ → 0$ ved $\pm∞$. Dette stemmer ikke i vårt tilfelle og vi kan derfor få to bundne tilstander med samme energi. 
+
+\end{document}

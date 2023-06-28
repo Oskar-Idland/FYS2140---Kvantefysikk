@@ -1,0 +1,144 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{enumerate}
+\newtheorem{theorem}{Theorem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pgfplots}
+\setlength{\parindent}{0cm}
+\usepackage{graphics}
+\usepackage{graphicx} % Required for including images
+\usepackage{subcaption}
+\usepackage{bigintcalc}
+\usepackage{pythonhighlight} %for pythonkode \begin{python}   \end{python}
+\usepackage{appendix}
+\usepackage{arydshln}
+\usepackage{physics}
+\usepackage{tikz-cd}
+\usepackage{booktabs} 
+\usepackage{adjustbox}
+\usepackage{mdframed}
+\usepackage{relsize}
+\usepackage{physics}
+\usepackage[thinc]{esdiff}
+\usepackage{fixltx2e}
+\usepackage{esint}  %for lukket-linje-integral
+\usepackage{xfrac} %for sfrac
+\usepackage{hyperref} %for linker, må ha med hypersetup
+\usepackage[noabbrev, nameinlink]{cleveref} % to be loaded after hyperref
+\usepackage{amssymb} %\mathbb{R} for reelle tall, \mathcal{B} for "matte"-font
+\usepackage{listings} %for kode/lstlisting
+\usepackage{verbatim}
+\usepackage{graphicx,wrapfig,lipsum,caption} %for wrapping av bilder
+\usepackage{mathtools} %for \abs{x}
+\usepackage[norsk]{babel}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\pagecolor[rgb]{0.075,0.075,0.075} \color[rgb]{1,1,1} %TODO: Slett når ferdig%
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\author{Oskar Idland}
+\title{Eksamen 2018 Høst}
+\date{}
+\begin{document}
+\maketitle
+\newpage
+
+\section*{Oppgave 1}
+  \subsection*{a)}
+    De Broglie's hypotese sier at partikler (med masse) også har en bølgelengde som er utrykk ved $λ = h / p$, hvor $p$ er bevegelsesmengden. 
+  
+  \subsection*{b)}
+    $E$ er energien til partikkelen, $p$ er bevegelsesmengden, $m_0$ er hvilemassen til partikkelen og $c$ er lyshastigheten. Kinetisk energi $K$ er definert som $\frac{1}{2m^2}pv^2$. Her bruker vi bevegelsesmengden fra energien. 
+    \[
+    E = \frac{1}{2m} \sqrt{\frac{E^2}{c^2} - m_0^{2}c^4} - m_0c^2
+    \]
+    
+  \subsection*{c)}
+    Vi vet at $λ = h / p$. Vi setter inn bevegelsesmengden vi fant fra istad. 
+    \[
+    λ_{\text{rel}} = \frac{2mh}{\sqrt{\frac{E^2}{c^2} - m_0^{2}c^4}}
+    \]
+    
+  \subsection*{d)}
+    For en ikke relativistisk partikkel trenger vi ikke ta hensyn til $p^2c^2$
+    \[
+    λ_{\text{ikke-rel}} = \frac{2mhc}{E}
+    \]
+      
+  \subsection*{e)}
+    Hvis vi ser fra likningene at $E_k ≪ 2m_0c^2$ 
+    
+  \subsection*{f)}
+    Braggdiffraksjon oppstår når fotoner treffer en krystall oppdelt i lag, med konstant avstand $d$. Noen av fotonene vil kollidere med elektronene i det øverste laget, andre vil reise litt lenger ned. De blir likevel alle emittert ut med samme vinkel som de kom inn med. Da reiser fotonene parallelt med hverandre, men med en liten avstand $d$. Her viser fotonene sine bølgeegenskaper og interferer med hverandre. Dette gir et interferensmønster på en skjerm.
+    
+    \paragraph*{FASIT: }
+      Fotonene som ikke kolliderer med øverste lag av atomer i krystallen går videre til neste lag og vil reise en ekstra distanse på $2d\sin θ$. Hvis denne ekstra distansen tilsvarer et heltallig multiplum av bølgelengden vil Bragg-betingelsen $2d\sin θ = nλ$ være oppfylt og vi får et interferensmønster på skjermen. 
+    
+  \subsection*{g)}
+    
+
+\section*{Oppgave 2}
+  \subsection*{a)}
+    Vi uttrykker størrelser $Q$ i kvantemekanikken via operatorer $\hat{Q}$. Ved enkeltmålinger kan vi finne verdier som samsvarer med egenverdiene til operatorene. 
+    
+    \paragraph*{FASIT: }
+      Vi definerer operatoren $Q(\hat{r}, \hat{p})$, hvor $\hat{r} = \vec{r}$ og $\hat{p} = - iℏ∇$. De eneste mulige verdiene vi kan måle er egenverdiene fra egenverdi ligningen $Q(\hat{r}, \hat{p})Φ = QΦ$
+  
+  \subsection*{b)}
+    TASL
+    \[
+    \hat{H}Ψ = EΨ \quad , \quad \hat{H} = -\frac{ℏ^2}{2m} \frac{∂^2 }{∂ x^2} + V(x) \quad , \quad E = iℏ \frac{∂ }{∂ t}
+    \]
+  
+  \subsection*{c)}
+    Planbølge som beveger seg i positiv $x$-retning.
+    \[
+    A \cos (kx - ωt)
+    \]
+    Kan også skrives slik når bølgen beveger seg i positiv $x$-retning. 
+    \[
+    A e^{-i(kx - ωt)}
+    \]
+    Her er $p = ℏk$ og $E = ℏω$. Videre løser vi Schrödningerlikningen med denne bølgefunksjonen
+    
+    \[
+    \hat{H}Ψ = EΨ 
+    \]
+    \[
+    - \frac{ℏ^2}{2m} (-k^2)A e^{-i(kx - ωt)} + V(x)Ae^{-i(kx - ωt)} = iℏ iωAe^{-i(kx - ωt)}
+    \]
+    \[
+      - \frac{ℏ^2}{2m} (-k^2) + V(x) = ℏω
+    \]
+    Ettersom vi har en fri partikkel er $V = 0$. 
+    \[
+    \frac{ℏ^2k^2}{2m} = -ℏω
+    \]
+    \[
+    ω = \frac{ℏk^2}{2m}
+    \]
+
+\end{document}

@@ -1,0 +1,227 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{enumerate}
+\newtheorem{theorem}{Theorem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pgfplots}
+\setlength{\parindent}{0cm}
+\usepackage{graphics}
+\usepackage{graphicx} % Required for including images
+\usepackage{subcaption}
+\usepackage{bigintcalc}
+\usepackage{pythonhighlight} %for pythonkode \begin{python}   \end{python}
+\usepackage{appendix}
+\usepackage{arydshln}
+\usepackage{physics}
+\usepackage{tikz-cd}
+\usepackage{booktabs} 
+\usepackage{adjustbox}
+\usepackage{mdframed}
+\usepackage{relsize}
+\usepackage{physics}
+\usepackage[thinc]{esdiff}
+\usepackage{fixltx2e}
+\usepackage{esint}  %for lukket-linje-integral
+\usepackage{xfrac} %for sfrac
+\usepackage{hyperref} %for linker, må ha med hypersetup
+\usepackage[noabbrev, nameinlink]{cleveref} % to be loaded after hyperref
+\usepackage{amssymb} %\mathbb{R} for reelle tall, \mathcal{B} for "matte"-font
+\usepackage{listings} %for kode/lstlisting
+\usepackage{verbatim}
+\usepackage{graphicx,wrapfig,lipsum,caption} %for wrapping av bilder
+\usepackage{mathtools} %for \abs{x}
+\usepackage[norsk]{babel}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\author{Oskar Idland}
+\title{Oblig 10}
+\date{}
+\begin{document}
+\maketitle
+\newpage
+\section*{\underline{A Diskusjonsoppgaver}}
+\subsection*{Oppgave 1}
+\subsubsection*{a)}
+\underline{Svaret er alternativ C: 0.} \\
+Bølgefunksjonen er gitt som en superposisjon av to bølgefunksjoner med verdi for kvantetallet $m = 0$. Det gir oss en verdi for $L_z = mℏ = 0$. Da er sannsynligheten for å måle z-komponenten av angulærmomentet til å være $3ℏ$ lik null.
+
+\subsubsection*{b)}
+Nei det kan vi ikke. Det er fordi at $ψ_{200}$ og $ψ_{300}$ ikke har samme energi pga forskjellig kvantetall $n$. Vi må skrive det på følgende måte. 
+\[
+Ψ(\vec{r},t) = \frac{1}{\sqrt{2}}\left(ψ_{200}e^{-iE_2t / ℏ} + ψ_{300}e^{-iE_3t / ℏ}\right)
+\]
+\subsubsection*{c)}
+Energien $E_{nm}$ i utrykket for den tidsavhengige faktoren er ikke avhengig av kvantetallet $l$. Da vil energien til $ψ_{210}$ og $ψ_{200}$ være den samme og vi kan skrive det på følgende måte.
+\[
+Ψ(\vec{r}, t) = \frac{1}{\sqrt{2}} \left(ψ_{210} + ψ_{200}\right)e^{-iE_{20}t / ℏ}
+\]
+\subsubsection*{d)}
+Vi får samme tidsutvikling når egentilstandene deler kvantetallene $n$ og $m$. Det er fordi det tidsavhengige leddet er på formen
+\[
+e^{-iE_{nm}t / ℏ}\quad , \quad E_{nm} = - \frac{E_0}{n^2} + \frac{eB}{2 m_e}mℏ
+\]
+Vi ser også ut fra utrykket at energien $E_{mn}$, bare er avhengig av $m$, \textbf{\textit{gitt at}} elektronet er i et magnetfelt. 
+
+\section*{\underline{B Regneoppgaver}}
+\subsection*{Oppgave 2}
+\subsubsection*{a)}
+
+\subsubsection*{b)}
+Energien $E_n$ er representert ved operatoren $\hat{H_0}$. 
+Angulærmomentet $L$ er representert ved operatoren $\hat{L}$. 
+Angulærmomentets orientering i $z-$retning er representert ved operatoren $\hat{L}_z$. 
+
+\subsubsection*{c)}
+Energien og spinnet har skarpe fysiske størrelser, ettersom de er gitt ved skarpe verdier $n, l\ \&\ m$. 
+
+\subsubsection*{d)}
+\[
+\hat{H_0} Ψ(\vec{r}, t) = iℏ \frac{∂}{∂t}Ψ(\vec{r},t)
+\]
+\[
+H_0Ψ(\vec{r},t) =  iℏ \frac{\mathrm{d}}{\mathrm{d}t}ψ_{nlm}e^{-i E_{nm}t / ℏ}
+\]
+\[
+H_0Ψ(\vec{r},t) = E_{mn} ψ_{nlm}e^{-i E_{nm}t / ℏ}
+\]
+Vi vet at $H_0$ er energien så dette kan strykes fra begge sider.
+\[
+Ψ(\vec{r},t) = ψ_{nlm}e^{-i E_{nm}t / ℏ}
+\]
+
+\subsubsection*{e)}
+Vi sjekker at integralet til funksjonens absoluttverdi kvadrert faktisk er 1.
+\[
+∫_{0}^{∞} \left|Φ(\vec{r})\right|^2 \ \mathrm{d}r = \frac{1}{2l + 1} ∫_{0}^{∞} ∑_{m_l = -l}^{l} ∑_{m'_{l} = -l}^{l} ψ*_{nlm_{l}} ψ_{nlm'_{l}}(\vec{r}) \ \mathrm{d}^3\vec{r}
+\]
+\[
+\frac{1}{2l + 1} ∑_{m_l = -l}^{l} ∑_{m'_l = -l}^{l}  δ_{n,n'} δ_{l,l'} δ_{m,m'}
+\]
+Fra definisjonen av Kronecker-delta vet vi at produktet bare er 1 når $n = n', l = l'$ og $m = m'$. 
+Ettersom $n$ og $l$ alltid er like, blir det alltid 1. Vi summerer over alle $m$ og $m'$, så vi får $2l + 1$. 
+\[
+\frac{1}{2l + 1} (2l + 1) = 1
+\]
+\subsubsection*{f)}
+Vi setter bølgefunksjonen inn i Shrödingerligningen. 
+\[
+H_0 Ψ = - iℏ \frac{\mathrm{d}}{\mathrm{d}t}Ψ
+\]
+\[
+H_0 Ψ = -iℏ \frac{\mathrm{d}}{\mathrm{d}t} Φ(\vec{r}) e^{-iE_{n}t / ℏ}
+\]
+\[
+\underbrace{H_0}_{E_n} Ψ = E_n Φ(\vec{r}) e^{-iE_{n}t / ℏ}
+\]
+\[
+Ψ(\vec{r},t) = Φ(\vec{r}) e^{-iE_{n}t / ℏ}
+\]
+
+\subsubsection*{g)}
+\[
+\left<\hat{H_0}\right> = \braket{Ψ}{\hat{H_0}Ψ} = ∫_{0}^{∞} Ψ^{*} E_n Ψ \ \mathrm{d}r = E_n ∫_{0}^{∞} Ψ^{*}Ψ \ \mathrm{d}r = E_n
+\]
+Ettersom energien er skarpt bestemt er den også forventningsverdien til energien. Dette gjelder også angulærmomentet, $L^2$. Ettersom $L_z$ er gitt av $m$ og $Φ$ er en lineærkombinasjon av forskjellige verdier for $m$, må vi regne ut denne selv
+
+\[
+\left<L^2\right> = L^2
+\]
+\[
+\left<L_z\right> = \braket{Ψ}{\hat{L}_zΨ} = ∫_{0}^{∞} Ψ^{*} mℏ Ψ \ \mathrm{d}r = ∫_{0}^{∞} mℏ\left|Φ(\vec{r})\right|^2 \ \mathrm{d}r
+\]
+Vi kjenner igjen dette fra oppgave e) og setter inn $mℏ$ i summen. 
+
+\[
+∫_{0}^{∞} mℏ\left|Φ(\vec{r})\right|^2 \ \mathrm{d}r =  ∑_{m_l = -l}^{l} ∑_{m'_l = -l}^{l} mℏ δ_{n,n'} δ_{l,l'} δ_{m,m'}
+\]
+Tidligere når vi summerte over Kronecker-deltaene fikk vi $2l + 1$. Denne ganger summerer vi også over $m$ som går fra $-l$ til $l$. Summene vil altså kansellere hverandre og summen blir 0
+\[
+\left<L_z\right> = 0
+\]
+
+
+\subsubsection*{h)}
+For skarpe verdier vil forventningsverdien alltid være 0. Det vil si at 
+\[
+σ_{\hat{L}} = σ_{\hat{H_0}} = 0
+\]
+For $L_z$ må vi først finne $\left<L_z^2\right>$. 
+\[
+\left<L_z^2\right> = \braket{Ψ}{\hat{L}_z^2Ψ} = ∫_{0}^{∞} Ψ^{*} m^2ℏ^2 Ψ \ \mathrm{d}r = ∫_{0}^{∞} m^2ℏ^2\left|Φ(\vec{r})\right|^2 \ \mathrm{d}r
+\]
+Vi skriver igjen om til en sum, men ettersom vi kvadrerer alle $m$ vil ikke de negative $l$-verdiene kansellere de positive.
+\[
+∫_{0}^{∞} m^2ℏ^2\left|Φ(\vec{r})\right|^2 \ \mathrm{d}r = ∑_{m_l = -l}^{l} ∑_{m'_l = -l}^{l} m^2ℏ^2  δ_{n,n'} δ_{l,l'} δ_{m,m'}
+\]
+Denne summen finner vi i Rottmann, som gir oss en forventningsverdi. 
+\[
+\left<L_z^2\right> = ℏ^2\left(\frac{2}{3}l^3 + l^2 + \frac{1}{3}l\right)
+\]
+Vi finner så spredningen $σ_{L_z}$. 
+\[
+σ_{L_z} = \sqrt{\left<L_z^2\right> - \left<L_z\right>^2} = \sqrt{ℏ^2\left(\frac{2}{3}l^3 + l^2 + \frac{1}{3}l\right) - 0} = ℏ\sqrt{\frac{2}{3}l^3 + l^2 + \frac{1}{3}l}
+\]
+\subsubsection*{i)}
+Alle verdiene for $m_l$ har lik sannsynlighet for å bli målt. ettersom det er $2l + 1$ verdier for $m_l$ er sannsynligheten for å måle en bestemt verdi $\frac{1}{2l + 1}$.
+
+\subsubsection*{j)}
+Nei, denne målingen er ikke avhengig av tid. 
+
+\subsubsection*{k)}
+Vi vet at $\displaystyle E_{nm} = \frac{E_1}{n^2} + \frac{e}{2m}B \hat{L}_z$. 
+
+\subsubsection*{l)}
+Ettersom $Φ$ er en superposisjon av flere $m_l ∈ [-l,l]$, er den ikke en energi-tilstand for $\hat{H}$ ettersom energien $E_{nm}$ er gitt ved $m_l$. 
+
+
+
+
+
+
+
+% \[
+% R_{10}(r) = \frac{2}{a_0^{3 /2}}e^{-2 / a_0}
+% \]
+% \[
+% ∫_{0}^{∞} x^{n}e^{- βx} \ \mathrm{d}x = \frac{n!}{β^{n+1}}, \quad a_0 = 0.0529 \ \mathrm{nm}
+% \]
+% \[
+% <r> = ∫_{0}^{∞} R_{10}  rR_{10}r^2 \ \mathrm{d}r \frac{4}{a_0^{3}} ∫_{0}^{∞} r^3 e^{-2r / a_0} \ \mathrm{d}x
+% \]
+% \[
+% \frac{4}{a_0^3} ∫_{0}^{∞} r^3 e^{- r β} \ \mathrm{d}r = \frac{4}{a_0^3} \frac{3!}{2^{4} / a_0^4} = \frac{3}{2}a_0 ≈ 0.0793 \ \mathrm{nm}
+% \]
+% \[
+% \left<r^2\right> = \frac{4}{a_0^{3}} ∫_{0}^{∞} r^{4}e^{-rβ} \ \mathrm{d}r = \frac{4}{a_0^3} \frac{4!}{2^{5} / a_0^5} = 3a_0^2 ≈ 0.221 \ \mathrm{nm}^2
+% \]
+% \[
+% σ_r = \sqrt{<r^2> - <r>^2} = a_0 \frac{\sqrt{3}}{2}
+% \]
+
+
+\end{document}

@@ -1,0 +1,112 @@
+\section{11 Forelesnings Notater}
+\subsection*{Fri partikkel og energi tilstander}
+\subsubsection*{Diskrete tilstander}
+Vi vet at 
+\[
+∫_{-∞}^{∞} ψ_m^{*}ψ_n \ \mathrm{d}x = δ_{mn}
+\]
+Da er spørsmålet hva som gjelder for Kontinuerlige tilstander.
+
+
+\subsubsection*{Kontinuerlig variabler}
+\[
+Ψ_k(x,0) = ∫ c(k) Ae^{ikx} \ \mathrm{d}k
+\]
+\[
+c(k) = ∫ \underbrace{A}_{\frac{1}{\sqrt{2π}}}e^{-kx}Ψ(x,0) \ \mathrm{d}x
+\]
+\subsubsection*{For alle Dirac-ortogonale $Ψ_k$}
+\[
+∫ Ψ_k^{*}Ψ(x,0) \ \mathrm{d}x ⇒ dk' = ∫ c(k')δ(k-k') \ \mathrm{d}k' = c(k)
+\]
+Da er
+\[
+c(k) = ∫  Ψ_k^{*}Ψ(x,0) \ \mathrm{d}x
+\]
+\[
+\left<H\right> = ∫ Ψ^{*}(x,0) \hat{H}Ψ(x,0) \ \mathrm{d}x = ∬ c^{*}(k')Ψ^{*}_k \ \mathrm{d}k' \hat{H} \int c(k)Ψ_k \ \mathrm{d}x
+\]
+\[
+∬ E_k c^{*}(k')c(k) ∫ \underbrace{Ψ_k^{*}(x)Ψ_k(x) \ \mathrm{d}x}_{δ(k' - k)} \ \mathrm{d}k' \ \mathrm{d}k
+\]
+\[
+∫ E_k c^{*}(k)c(k) \ \mathrm{d}k = ∫ E_k \left|c(k)\right|^2 \ \mathrm{d}k
+\]
+\[
+\left<H\right> = ∫ E_k \left|c(k)\right|^2 \ \mathrm{d}k
+\]
+\subsubsection*{Dirac-delta-funksjon}
+\[
+δ(k' - k) = 
+\begin{cases}
+  ∞, &\text{ if }k' = k\\
+  0, &\text{ if not }
+\end{cases}
+\]
+\subsection*{Fri partikkel og }
+\[
+Ψ(x,t) = Ψ_k(x,t) Φ(x) \quad , \quad  Φ(x) = A e^{- 2πg^2 \left(k_0x - ω_0t\right)^2} \quad Ψ_k(x,t) = \frac{1}{\sqrt{2π}} e^{i(k_0x - ω_0t)}
+\] 
+\[
+∫ ψ^{*}ψ \ \mathrm{d}x = ∫_{-∞}^{∞} \frac{A^2}{2πk}e^{-2ay^2} \ \mathrm{d}y = \frac{A^2}{2πk} \frac{1}{2g} ⇒ A = \sqrt{4πgk}
+\]
+\[
+∫_{-∞}^{∞} ye^{-2ay^2} \ \mathrm{d}y = 0
+\]
+\[
+∫_{-∞}^{∞} y^2e^{-2ay^2} \ \mathrm{d}y = \frac{1}{4a} \frac{1}{2g}
+\]
+\[
+Ψ(x,t) = \sqrt{2gk}e^{iy - ay^2} = Be^{iy - a^2} \quad , \quad \left|Ψ(x,t)\right|^2 = B^2e^{2ay^2}
+\]
+\[
+\frac{∂Ψ}{∂y} = \left(i - 2ay\right)Ψ
+\]
+\[
+\frac{∂^2 Ψ}{∂ y^2} = (-2a + \left(i - 2ay\right)^2)Ψ = \left(-2a + \left(-1 + 4a^2y^2+ 4iay\right)\right)Ψ
+\]
+\[
+\hat{p} = -iℏ \frac{∂}{∂x} = -iℏ \frac{∂}{∂y} \quad , \quad \hat{p}^2 = - ℏ^2k^2 \frac{∂^2 }{∂ y^2}
+\]
+\[
+\left<x\right> = ∫ x \left|Ψ\right|^2 \ \mathrm{d}x = ∫ \frac{1}{k}(y + ω)B^2 e^2-2ay^2 \frac{\ \mathrm{d}y}{k} = \frac{B^2}{k^2} ωt \frac{1}{2g}
+\]
+\[
+\left<x\right> = \frac{2g}{k} ωt \frac{1}{2g} = \frac{ω}{k}t = v ⋅ t
+\]
+\[
+\left<x^2\right> = \frac{B^2}{k^{3}} ∫ \left(y^2 + ω^2t^2 + 2ylwt\right)e^{-2ay^2} \ \mathrm{d}y = \frac{B^2}{k^{3}}\left(\frac{1}{4a} \frac{1}{2g} + ω^2t^2 \frac{1}{2g}\right)
+\]
+\[
+\left<x^2\right> = \frac{2g}{k^2}\left(\frac{1}{4 ⋅ 2πg^2} \frac{1}{2g}\frac{ω^2t^2}{2g}/\right) = \frac{1}{k^3}\frac{1}{8πg^2} + \frac{ω^2t^2}{k^2}
+\]
+\[
+σ_{x} = \sqrt{\left<x^2\right> - \left<x\right>^2} = \sqrt{\frac{1}{k^2}\frac{1}{8πg^2} + \frac{ω^2t^2}{k^2} - \left(\frac{ω}{k}t\right)^2}
+\]
+\[
+σ_{x} = \sqrt{\frac{1}{k^2}\frac{1}{8πg^2} + \frac{ω^2t^2}{k^2} - \frac{ω^2t^2}{k^2}} = \frac{1}{kg}\sqrt{\frac{1}{8π}}
+\]
+\[
+\left<p\right> = m \frac{∂ }{∂ t} \left<x\right> = m \frac{ω}{k} = m ⋅ v = p = ℏk
+\]
+\[
+\left<p\right> = ∫ Ψ\left(- iℏ \frac{∂}{∂y}\right)Ψ \frac{\ \mathrm{d}y}{k} = ℏk
+\]
+\[
+\left<p^2\right> = ℏ^2 k^2 \left(1 + 2πg^2\right)
+\]
+\[
+σ_p = \sqrt{ℏ^2k^2 + ℏ^2k^22πg^2 - ℏ^2k^2} = ℏkg\sqrt{2π}
+\]
+\[
+σ_{x} σ_p = \frac{1}{kg\sqrt{8π}} ⋅ ℏkg\sqrt{2π} = \frac{ℏ}{\sqrt{4}} = ℏ/2 
+\]
+Dette er Heisenberg's usikkerhetsrelasjon. hvor $σ_x σ_p \ge ℏ / 2$
+
+\paragraph{Oppsumering av begreper}
+\begin{enumerate}
+    \item 
+    Måler du partiklene kollapser de forskjellige muligheten for tilstand til kun én tilstand ifølge københavnstolkningen. 
+    \item Problem å normere egenfunksjoner til $\hat{p}$ og $\hat{x}$. Problematisk å tolke måling av bevegelsesmengde og posisjon. 
+    \item Hvis $\left[\hat{A},\hat{B}\right] ≡ 0$ har de felles egenfunksjon. 
+\end{enumerate}

@@ -90,11 +90,30 @@ Elektrisk ladning er en diskré størrelse ettersom det er definert ut fra ladni
 Energi er en diskré størrelse 
   
 
+\begin{figure}
 \subsection*{c)}
-\colorbox{red}{Legg til tegninger til slutt}
+    \centering
+    \begin{subfigure}{.45\textwidth}
+      \centering
+      \includegraphics[width = \textwidth]{Figures/A.1.c.i.png}
+      \caption{Potensiell energi i en gjør som funksjon av avstanden $x$ fra likevektspunktet}
+      \label{subfig: A.1.c.i}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.45\textwidth}
+      \centering
+      \includegraphics[width = \textwidth]{Figures/A.1.c.ii.pdf}
+      \caption{Energien til et elektron i et hydrogenatom som en funksjon av energinivå $n$}
+      \label{subfig: A.1.c.ii}
+    \end{subfigure}
+    \hfill
+    \caption{Grafer som viser forskjellen på kontinuerlige og diskrete størrelser}
+    \label{fig: A.1.c}
+\end{figure}
 
-$$
-  
+
+
+\newpage
 \section*{Oppgave 2 Determinisme og Statistisk Fordeling}
 \subsection*{a)}
 For å vite hvor en ball havner etter den har blitt kastet må vi vite dens startposisjon $r_0$ og dens hastighetsvektor $\vec{v}$. Usikkerheter kan komme fra vår evne til å måle både hastighet og startposisjon. I klassisk fysikk er dette kontinuerlige verdier som vil være umulig å få helt nøyaktig. 
@@ -102,8 +121,8 @@ For å vite hvor en ball havner etter den har blitt kastet må vi vite dens star
 \subsection*{b)}
 For å vite akkurat hvor den ville havnet måtte vi hatt den eksakte startposisjon $r_0$ og dets hastighetsvektor $\vec{v}$. I kvantefysikken er det umulig å vite begge to samtidig og dermed umulig å vite nøyaktig hvor den havner. Det eneste vi kan vite er sannsynligheten for hvor partikkelen kan befinne seg og hvilke hastigheter den kan ha. Dette kan gi oss da en sannsynlighet for hvor den kommer til å havne. 
 
-\subsection*{c)}
 \begin{figure}
+\subsection*{c)}
     \centering
     \begin{subfigure}{.49\textwidth}
       \centering
@@ -123,7 +142,7 @@ For å vite akkurat hvor den ville havnet måtte vi hatt den eksakte startposisj
     \label{fig: A.2.b}
 \end{figure}
 
-
+\newpage
 \part*{\underline{B Regneoppgaver}}
 \section*{Oppgave 3 Lek med Komplekse Tall}
 \subsection*{a)}
@@ -139,7 +158,7 @@ For å vite akkurat hvor den ville havnet måtte vi hatt den eksakte startposisj
     \left| z \right| ^{2} = 1^{2} = 1
     \] 
     \[
-    zz^{*}  = -ii = 1 = \left| z \right| ^{2}
+    zz^{*}  = -ii = 1 = \left| z \right|^{2}
     \]
     \item $z = 3 + 4i$ 
     \[
@@ -298,7 +317,7 @@ Hvis vi krever at $\lim_{x \to -∞}f(x) = 0$ må $B = 0$ ettersom $\lim_{x \to 
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .5]{Figures/B.4.d.png}
+  \includegraphics[scale = .75]{Figures/B.4.d.png}
   \caption{$f(x)$ med $B = 0$ og $A = 1$}
   \label{fig: B.4.d}
 \end{figure}
@@ -309,7 +328,7 @@ Hvis $ε < 0$ så vil løsningen på ligningen bli kompleks. Da blir løsningen 
  f(x) = A e^{i \left|\sqrt{ε}\right| x} + B e^{-i \left|\sqrt{ε}\right| x} = A( \cos (\left|\sqrt{ε}\right| x) + i \sin (\left|\sqrt{ε}\right| x) ) + B( \cos (\left|\sqrt{ε}\right| x) - i \sin (\left|\sqrt{ε}\right| x) )
 \]
 \[
-f(x) =  A \cos (\left|\sqrt{ε}\right| x) + B \cos (\left|\sqrt{ε}\right| x) + i \left( A \sin (\left|\sqrt{ε}\right| x) - B \sin (\left|\sqrt{ε}\right| x) \right)
+f(x) =  A \cos (\left|\sqrt{ε}\right| x) + B \cos (\left|\sqrt{ε}\right| x) + i\left( A \sin (\left|\sqrt{ε}\right| x) - B \sin (\left|\sqrt{ε}\right| x) \right)
 \]
 \[
 f(x) = \left( A + B \right) \cos (\left|\sqrt{ε}\right| x) + i \left( A - B \right) \sin (\left|\sqrt{ε}\right| x)
@@ -327,18 +346,18 @@ f(x) = \left( A + B \right) \cos (\left|\sqrt{ε}\right| x) + i \left( A - B \ri
     ∫_{-∞}^{∞} e^{-\left( ax^{2} + 2bx + c \right) } \ \mathrm{d}x = \sqrt{\frac{π}{a}} e^{\frac{b^{2} - ac}{a}}
     \]
     \[
-    π e^{\frac{2^{2} - 1}{1}} = π e^{3}
+    π e^{\frac{2^{2} - 1}{1}} = π e^{3}  x^2  
     \] 
     \item   
     \[
     ∫_{0}^{∞} xe ^{-2x^{2}} \ \mathrm{d}x
     \]
-    Bruker Rottmann (2919 s, 155 (50))
+    Bruker Rottmann (2019 s, 155 (50)) 
     \[
-    ∫_{0}^{∞} x^{k} e^{- λx^{2}} \ \mathrm{d}x = \frac{1}{2} λ ^{-\frac{k + 1}{2}} Γ \left( \frac{k + 1}{2} \right) 
+    ∫_{0}^{∞} x^{k} e^{- λx^{2}} \ \mathrm{d}x = \frac{1}{2} λ ^{-\frac{k + 1}{2}} Γ \left( \frac{k + 1}{2}\right) 
     \]
     \[
-    \frac{1}{2}2^{- \frac{1 + 1}{2}} Γ\left( \frac{1+1}{2} \right) = \frac{1}{2} 2^{-1} Γ(1)
+    \frac{1}{2}2^{- \frac{1 + 1}{2}} Γ\left( \frac{1+1}{2} \right) = \frac{1}{2} 2^{-1} Γ(1)  
     \]
     \[
     \frac{1}{4} 1 = \frac{1}{4}
@@ -360,9 +379,12 @@ Vi bruker at
 ∫_{0}^{∞} x^{n} e ^{-α x} \ \mathrm{d}x = \frac{1}{α^{n+1}}n!
 \]
 \[
-4π \frac{1}{2^{2}} 1! = π
+4π\frac{1}{2^{2}} 1! = π 
 \]
 
-
+\[
+\sqrt{\left( x - 1 \right)^{2} } \left(\frac{x}{2}\right) = \sqrt{\left( x - 1 \right)^{2} } 
+\left( λ - 2 \right)^2 
+\]
 
 \end{document}

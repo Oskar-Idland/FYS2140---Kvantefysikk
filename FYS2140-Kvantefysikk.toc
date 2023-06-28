@@ -1,5 +1,0 @@
-\babel@toc {norsk}{}\relax 
-\contentsline {part}{I\hspace {1em}Forelesning Notater}{2}{part.1}%
-\contentsline {chapter}{\numberline {1}03 Forelesning Notater}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Fotoelektrisk Effekt}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Röntgen-Stråling}{3}{section.1.2}%

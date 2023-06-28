@@ -1,0 +1,69 @@
+\section{09 Forelesnings Notater}
+\paragraph{\underline{Sentrale kunnskaper}}
+\begin{itemize}
+    \item Forså begrepet sannsynlighetstettheten $\left| Ψ(x,t) \right| ^2$ for en partikkel og at $\left| Ψ(x,t) \right| ^2 δx$ er sannsynligheten for å finne en partikkel mellom $x$ og $x + δx$
+    \item Normalisere bølgefunksjonen $\left| Ψ(x,t) \right| ^2$ og vise at den er tidsuavhengig. 
+    \item Beregning av $\left< x \right>, σ,...$
+    \item Beregne posisjon og bevegelsesmengde for en partikkel via bølgefunksjonen
+\end{itemize}
+
+\paragraph{Forventningsverdi}
+\[
+\left< j \right> = ∑_{j=1}^{n} j ⋅ P_N(j)
+\]
+Med et standard avvik $σ$ for et kast $j - \left< j \right>$ gitt ved
+\[
+σ = \sqrt{\left<\left(j - \left<j\right>\right)^2\right>} = \sqrt{∑_{j=1}^{n} \left(j - \left<j\right>\right)^2 ⋅ P_N(j)} = \sqrt{\left<j^2\right> - \left<j\right>^2}
+\]
+\subsubsection*{Viktig om bølgefunksjonen}
+\begin{enumerate}
+    \item $Ψ$ er en generell løsning for gitt $v(x)$
+    \item $Ψ → 0$ når $x → ± ∞$
+    \item $Ψ$ og $\frac{\mathrm{d}Ψ}{\mathrm{d}x}$ må være kontinuerlige
+    \item $\left| Ψ \right| ^2 = Ψ ⋅ Ψ^{*}$ er en sannsynlighetstettheten
+    \item $∫_{a}^{b} \left| Ψ \right| ^2 \ \mathrm{d}x$ er sannsynligheten for å finne en partikkel mellom $a$ og $b$. 
+    \item $∫_{-∞}^{∞} \left| Ψ \right| ^2 \ \mathrm{d}x = 1$ er avhengig av tid
+\end{enumerate}
+
+Hvis $Ψ$ er tidsuavhengig må den den deriverte være konstant. 
+\[
+\frac{\mathrm{d}}{\mathrm{d}t} ∫_{-∞}^{∞} Ψ^{*}Ψ  \ \mathrm{d}x = ∫ \frac{\mathrm{d}}{\mathrm{d}t} Ψ^{*} Ψ \mathrm{d}x = 0
+\]
+\[
+∫ \frac{\mathrm{d}}{\mathrm{d}t} Ψ^{*} Ψ \mathrm{d}x = ∫ \underbrace{Ψ^{*} \frac{∂ Ψ}{∂ t} + \frac{∂ Ψ^{*}}{∂ t} Ψ}_{P} \mathrm{d}x = 0        
+\]  
+\[
+P = Ψ^{*} \frac{1}{iℏ} \left( - \frac{ℏ^2}{2m} \frac{∂^2 }{∂ x^2} + V \right) Ψ + \frac{1}{iℏ} \left( - \frac{ℏ}{2m} \frac{∂^2 }{∂ x^2} + V \right) Ψ^{*} Ψ = 0
+\]
+\[
+\frac{iℏ}{2m} \left( \frac{∂^2 Ψ}{∂ x^2}Ψ^{*} - \frac{∂^2 Ψ^{*}}{∂ x^2}Ψ \right) 
+\]
+\[
+\frac{∂ }{∂ x} \left( Ψ^{*} \frac{∂ Ψ}{∂ x} - \frac{∂ Ψ^{*}}{∂ x}Ψ \right) = \cancel{\frac{∂ Ψ^{*}}{∂ x}} + Ψ^{*} \frac{∂^2 Ψ}{∂ x^2}Ψ^{*} - \frac{∂^2 Ψ^{*}}{∂ x^2}Ψ - \cancel{\frac{∂ Ψ^{*}}{∂ x}Ψ}
+\]
+Setter tilbake inn i $P$
+\[
+∫ \frac{iℏ}{2m} \frac{∂}{∂x} \left( \frac{∂ Ψ}{∂ x} Ψ^{*} - \frac{∂ Ψ^{*}}{∂ x} Ψ \right) \mathrm{d}x = \frac{iℏ}{2m} \left[ \frac{∂ Ψ}{∂ x} Ψ^{*} - \frac{∂ Ψ^{*}}{∂ x} Ψ \right]_{-∞}^{∞} = 0 
+\]
+
+\subsection{Forventningsverdi og Standardavvik for Partikler}
+\[
+\left< x \right> ∫_{-∞}^{∞} x \left| Ψ(x,t) \right|^2  \ \mathrm{d}x
+\]
+\[
+\left< x^2 \right> ∫_{-∞}^{∞} x^2 \left| Ψ(x,t) \right| ^2 \ \mathrm{d}x
+\]
+\[
+σ_{x} = \sqrt{\left< x^2 \right> - \left< x \right>^2}
+\]
+Vi skal finne forventet bevegelsesmengde $\left< p \right>$. Da trenger vi en sannsynlighetsfunksjon $Φ(p,t)$for bevegelsesmengde.
+\[
+\left<p^2\right> = ∫_{-∞}^{∞} p^2\left|Φ(p,t)\right| ^2 \ \mathrm{d}p
+\]
+Klassisk fysikk: $p = mv = m \frac{\mathrm{d}}{\mathrm{d}t}x$
+Kvantefysikk: $\left<p\right> = m \left<v\right> = m \left<\dot{x}\right>$
+\[
+\left<p\right> = m \frac{\mathrm{d}}{\mathrm{d}t} ∫ x Ψ^{*} Ψ \mathrm{d}x = m ∫ x \frac{∂ }{∂ t}Ψ^{*}Ψ \mathrm{d}x = m \frac{iℏ}{2m} ∫_{-∞}^{∞} x \frac{∂}{∂x} \left(Ψ^{*} \frac{∂ Ψ}{∂ x} - \frac{∂ Ψ^{*}}{∂ x}\right)  \ \mathrm{d}x
+\]
+Dette løses ikke like enkelt siden vi har en faktor av $x$. Vi må derfor integrere og får da følgende: 
+

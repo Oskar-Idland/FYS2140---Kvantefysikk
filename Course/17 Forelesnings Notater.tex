@@ -1,0 +1,151 @@
+\section{17 Forelesnings Notater}
+\paragraph*{\underline{Sentrale Kunnskaper}}
+\begin{itemize}
+    \item Beskrive postulatene til Kvantemekanikken
+    \item Håndtere kommutatorer
+    \item Forstå begrensningene til Schrödingerligningen
+\end{itemize}
+
+\subsection{Postulat}
+  
+\subsubsection*{Postulat 1: Tilstander}
+Tilstanden til et system bestemmes av en bølgefunkjson $Ψ(x,t)$ som er en løsning av TASL, og $Ψ(x,t)$ inneholder all informasjon om partikkelen. 
+\[
+\hat{H}\Psi(x,t) = iℏ \frac{∂ }{∂ t} Ψ(x,t)
+\]
+\subsubsection*{Postulat 2: Operatoren}
+For å hente ut en størrelse $Q$ som energi, eller bevegelsesmengde, må jeg ha tilhørende operator. Dette er en .Hermitisk operator $\hat{Q}$.
+\[
+∫ Φ^{*} \hat{Q}Ψ \ \mathrm{d}x = ∫ \left(\hat{Q}Φ\right)^{*}Ψ \ \mathrm{d}x
+\]
+\[
+\left<Q\right> = ∫ Ψ^{*} \hat{Q}Ψ \ \mathrm{d}x
+\]
+\[
+\left<Q\right>^{*} = \left(∫ Ψ^{*}\hat{Q}Ψ \ \mathrm{d}x\right)^{*} = ∫ Ψ \left(\hat{Q}Ψ\right)^{*} \ \mathrm{d}x = ∫ \left(\hat{Q}Ψ\right)^{*} Ψ \ \mathrm{d}x
+\]
+I følge definisjonene av en Hermitisk operator, er $\left<Q\right> = \left<Q\right>^{*}$. Dermed er 
+\[
+∫ Ψ^{*}\hat{Q}Ψ \ \mathrm{d}x = ∫ \left(\hat{Q}Ψ\right)^{*} Ψ \ \mathrm{d}x
+\]
+
+Vi undersøker om $\hat{p} = -iℏ \frac{∂}{∂x}$ er Hermitisk. 
+\[
+∫ Ψ^{*}\hat{p}Ψ \ \mathrm{d}x = -iℏ ∫  \underbrace{Ψ^{*}}_{u} \underbrace{\frac{\mathrm{d}}{\mathrm{d}x}Ψ}_{v', \ v = Ψ} \ \mathrm{d}x
+\]
+Bruker delvis integrasjon
+\[
+\left.\underbrace{-iℏ Ψ^{*}Ψ}_{0}\right\rvert_{-∞}^{∞} - \left(-iℏ\right) ∫ \frac{\mathrm{d}Ψ^{*}}{\mathrm{d}x} Ψ \ \mathrm{d}x
+\]
+\[
+∫ iℏ \frac{\mathrm{d}}{\mathrm{d}x} Ψ^{*} Ψ \ \mathrm{d}x = ∫ \left(-iℏ\frac{\mathrm{d}}{\mathrm{d}x}Ψ\right)^{*} Ψ \ \mathrm{d}x = ∫ \left(\hat{p}Ψ\right)^{*} Ψ \ \mathrm{d}x
+\]
+Vi ser at 
+\[
+∫ \left(\hat{p}Ψ\right)^{*} Ψ \ \mathrm{d}x = ∫ Ψ^{*}\hat{p}Ψ \ \mathrm{d}x
+\]
+Dermed er $\hat{p}$ Hermitisk.
+Den Hermitiske operatoren er viktig for utledninger senere. 
+
+Vi vet at bølgefunksjonen kan skrives som en sum av dets egenfunksjoner. 
+\[
+Ψ = ∑_{n}^{} c_n ψ_n
+\]
+vi kan også ha en annen bølgefunksjon $Φ$.
+\[
+Φ = ∑_{n}^{} d_n ψ_n
+\]
+Vi kan regne ut
+\[
+∫ Φ^{*}\hat{Q}Φ \ \mathrm{d}x = ∫ \left(∑_{m}^{} d_m^{*} Ψ_m^{*}\right)\hat{Q}\left(∑_{n}^{} c_n ψ_n\right) \ \mathrm{d}x 
+\]
+Definerer 
+\[
+∫ Ψ_m^{*} ψ_n \ \mathrm{d}x = \delta_{mn} \quad , \quad q_nψ_n = \hat{Q} ψ_n
+\]
+\[
+∑_{m}^{} ∑_{n}^{} d_m^{*} c_n q_n \int \psi_m^{*}\psi_n \ \mathrm{d}x = ∑_{m}^{} ∑_{n}^{} d_n^{*} c_n q_n
+\]
+
+\subsubsection*{Postulat 3: Målinger}
+De eneste mulige resultatene av en måling av observabel $q$ er egenverdiene $q$ til operatoren $\hat{Q}$. 
+\[
+\hat{Q}ψ_n = q_n ψ_n
+\]
+hvor $ψ_n$ er egenfunksjon, $q_n$ er reel og $σ_{Q} = 0$. Dette betyr at forventningsverdien er skarpt bestemt. 
+
+\subsubsection*{Generell Schrödingerligningen og egenverdiligningen}
+\paragraph*{TASL}
+\[
+\hat{H}Ψ(x,t) = iℏ \frac{∂ }{∂ t} Ψ(x,t), \quad \hat{H} = -\frac{ℏ^{2}}{2m} \frac{∂^{2}}{∂x^{2}} + V(x)
+\]
+\paragraph*{TUSL}
+\[
+\hat{H}ψ_n(x) = E_n ψ_n(x) , \quad \hat{H} = -\frac{ℏ^{2}}{2m} \frac{∂^{2}}{∂x^{2}} + V(x)
+\]
+\[
+\hat{x}ψ_\frac{y}{x} = yψ_y(x), \quad \hat{x} = x, \quad ψ_y(x) = δ(x-y)
+\]
+\[
+\hat{p}ψ_p(x) = pψ_p(x), \quad \hat{p}= -iℏ \frac{∂}{∂x}, \quad ψ_p(x) = \frac{1}{\sqrt{2\pi \hbar}} e^{-i\frac{p}{\hbar}x}
+\]
+
+Videre kan vi regne ut 
+\[
+\hat{H}ψ_n = E_n ψ_n
+\]
+\[
+\hat{x}Ψ_0 = x_0Ψ_0
+\]
+\[
+\hat{p}ψ_p = p ψ_p
+\]
+\[
+\hat{p}ψ_p = -iℏ \frac{\mathrm{d}}{\mathrm{d}x} Ae ^{ipx / ℏ} = pψ_p
+\]
+\subsubsection*{Postulat 4: Forventningsverdier}
+En samling av partikler i samme tilstand $Ψ$ vil ha forventningsverdi (gjennomsnitt av mange målinger) for observabelen $Q$ gitt ved 
+\[
+\left<Q\right> = ∫ Ψ^{*}\hat{Q}Ψ \ \mathrm{d}x
+\]
+
+\subsubsection*{Postulat 5: Kompletthet}
+Vi kan beskrive en bølgefunksjon $Ψ$ som en lineær kombinasjon av egenfunksjoner $ψ_n$. Hvis operatoren er settet av alle egentilstander til $\hat{Q}$ så er settet komplett.
+
+\subsubsection*{Postulat 6: Spinn}
+Halvtallig spinn: fermioner (som elektroner). 
+Heltallig spinn: bosoner (som fotoner).
+  
+\subsection{Teorier rundt bølgefunksjonen}
+Kvantefysikken beskriver barer hvordan ting oppfører seg, ikke hva det egentlig er. Vi vet hvordan elektroner oppfører seg, men vet ikke hva det er. Vi tenker oss at det er en klinkekule på lik linje med de første atommodellene. Vi bruker en et klassisk perspektiv med partikler og bølger med bølgelengde, som ikke nødvendigvis stemmer. Det er et stort problem med tolkning. Hva er egentlig en bølge, partikkel, superposisjon osv. Likevel gjør den en veldig god jobb med å beskrive det den skal 
+\subsubsection*{København tolkningen}
+Mener partikkelen er en bølge som kollapser ved måling. 
+
+\subsubsection*{GRW}
+Mener bølgefunksjonen kollapser spontant hele tiden. 
+
+
+\subsection{Anvendelser}
+\begin{itemize}
+    \item Vi løser Schrödingerligningen for fri partikkel, partikkel i boks, i brønn, harmonisk oscillator, dirac brønn osv. 
+\end{itemize}
+  
+\subsection{Kommutatorer}
+\paragraph*{Definisjon}
+\[
+\left[\hat{A}, \hat{B}\right] = \hat{A}\hat{B} - \hat{B}\hat{A}
+\]
+Hvis $\left[\hat{A}, \hat{B}\right] = 0$ kan $\hat{A}$ og $\hat{B}$ ha felles egenfunksjoner, og vi kan da måe skarpe samtidig for begge operatorene. Dette gjelder ikke om $\left[\hat{A}, \hat{B}\right] \neq 0$.
+\[
+\hat{A}Ψ_a = a ψ_a \ , \ \hat{B}Ψ_b = b ψ_b
+\]
+\[
+\left[\hat{A}, \hat{B}\right] Ψ = \hat{A} \hat{B} Ψ - \hat{B}\hat{A}Ψ = \hat{A}bΨ - \hat{B}aΨ = baΨ - abΨ = (\underbrace{ba-ab}_{0})Ψ 
+\]
+\subsection{Uskarphetsrelasjoner}
+
+
+\subsubsection{\underline{Oppsumering og forståelse}}
+\paragraph*{Postulatene til kvantemekanikken}
+\paragraph*{Kommutatorer}
+\paragraph*{Begrensningene til Schrödingerligningen}

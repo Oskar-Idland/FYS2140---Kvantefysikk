@@ -1,0 +1,149 @@
+\section{07 Forelesnings notater}
+\subsection{Oppdagelsen av Schrödinger-ligningen}
+\paragraph{\underline{Sentrale kunnskaper}}
+\begin{enumerate}
+    \item Skissere og motivere Schrödinger-ligningen fra Maxwells ligning. 
+    \item Taylors rekkeutvikling spesielt på relativistisk energi. 
+    \item $(fg)'' = f''g + 2f'g' + fg''$
+    \item Løse $\displaystyle \left( iℏ \frac{∂ }{∂ t} + \frac{ℏ^{2}}{2m}\frac{∂^2 }{∂ x^2} \right) Ψ(x,t) = 0 $
+    \item Superposisjon: Forstå hvordan man lager en bølgepakke av planbølger, og beregne gruppe- og fase-hastighet 
+\end{enumerate}
+\subsubsection{Davisson-Germer-eksp.}
+Sender inn elektroner i en nikkel krystall, som reflekteres på i en fast vinkel $ϕ$. Uavhengig om man sendte inn et eller flere elektroner ble det interferens. Da må man kunne se på elektronet som en bølge. Konstruktiv interferens må da være gitt ved 
+\[
+nλ = 2d\sin(ϕ).
+\]
+\subsubsection{Thomsons elektrondiffraksjon}
+\paragraph{Vannbølge}
+Har en intensitet $I = A^2$ hvor $A$ er amplituden.
+
+\paragraph{Elektromagnetisk bølge}
+Har en intensitet $I \propto ϵ(x, y, t)^2 $ hvor $\epsilon$ er elektromagnetisk feltstyrke.
+
+\paragraph{Maxwells likninger på flere former}
+\[
+\left( \frac{∂^2 }{∂ t^2} - c \frac{∂^2 }{∂ x^2} \right) ϵ (x,t) = 0
+\]
+\[
+∇ × ϵ = - \frac{∂ \vec{B}}{∂ t}
+\]
+\[
+\oint_{C} ϵ \ \mathrm{d}l =- \frac{∂ }{∂ t} \oiint  \vec{B} \mathrm{d}S 
+\] 
+\[
+ϵ (x,t) = ϵ_0 e^{i(kx - ωt)}
+\]
+\paragraph{Kvantemekanisk}
+\[
+E_{γ} = hν
+\]
+\[
+I = \left( \frac{∂^2}{∂ t^2} - c \frac{∂^2 }{∂ x^2} \right) Ψ(x,t) = 0
+\]
+\[
+Ψ(x,t) = Ψ_0 e^{i(kx - ωt)}
+\]
+\[
+I = \frac{\text{Antall fotoner}}{s ⋅ A} = \left| Ψ(x,y,t) \right| ^2
+\]
+Hvis ligningen for intensiteten gjelder for en gruppe fotoner må det også gjelde for et enkelt foton. Fotoner interagerer ikke med hverandre derfor vet vi dette. For et individuelt foton er det derfor slik at bølgefunksjonen kvadrert er sannsynligheten for at et elektron treffer et punkt på skjermen. Hvis vi integrere dette får vi 1 ettersom vi integrer sannsynligheten. Den er dermed normalisert. 
+\[
+∫ \left| Ψ(x,t) \right|^2 \ \mathrm{d}x  = 1
+\]
+
+\paragraph{Foton}
+\[
+\left( \frac{∂^2 }{∂ t^2} - c^2 \frac{∂^2 }{∂ x^2} \right) Ψ(x,t) = 0, \qquad Ψ(x,t) = Ψ_0 e^{i(kx - ωt)} = Ψ_0 e^{i(px -Et) / ℏ}, \quad p = ℏk, \quad E = ℏω
+\]
+\[
+\left( \frac{i}{ℏ^2} \right)^2 \left( \underbrace{ \left( -E \right) ^2 - c^2 p^2}_{0}\right) Ψ_0 e^{i(px -Et) / ℏ} = 0, \qquad E = pc, \quad E^2 = c^2 p^2
+\]
+
+\paragraph{Partikkel med masse $m > 0$}
+\[
+E^2 = p^2c^2 + m^2c^4 
+\]
+Antar $Ψ = Ψ_0 e^{i(px - Et)/ℏ}$. 
+\[
+\left( \frac{i}{ℏ} \right) ^2 \left( \left( -E \right) ^2 - c^2p^2 \right) Ψ_0 e^{i(px - Et) / ℏ} = 0
+\]
+\[
+\left( \frac{i}{ℏ} \right) ^2 \left( \underbrace{p^2c^2 + m^2c^4 - c^2p^2}_{≠ 0} \right) Ψ_0 e^{i(px - Et) / ℏ} = 0
+\]
+Dette går ikke opp. Vi mangler et ledd med $-m^2c^4$. 
+\[
+\left( \frac{∂^2 }{∂ t^2} - c \frac{∂^2 }{∂ x^2} - \frac{1}{ℏ^2} \right) Ψ(x,t) = 0, \qquad Ψ(x,t) = Ψ_0 e^{i(px - Et) / ℏ}
+\]
+\[
+\left( \left( - \frac{iE}{ℏ} \right)^2  - c^2 \left( \frac{ip}{ℏ} \right)^2 + \frac{1}{ℏ}m^2c^4  \right) Ψ(x,y) = 0
+\]
+\[
+\left( \underbrace{- \frac{1}{ℏ^2} \left( p^2c^2 + (mc^2)^2  \right) + \frac{c^2p^2}{ℏ^2} + \frac{1}{ℏ^2}m^2c^4 }_{0}\right)   Ψ(x,t) = 0
+\]
+\[
+E^2 = p^2c^2 + (mc^2)^2
+\]
+\[
+E = \sqrt{p^2c^2 + (mc^2)^2} = mc^2 \sqrt{1 + \frac{p^2c^2}{\underbrace{mc^2}_{x}}}
+\]
+Kjører Taylor utvikling. 
+\[
+E = mc^2 \left( 1 + \frac{1}{2} \frac{p^2c^2}{(mc^2)^2} + \frac{1}{8}\ldots    \right) 
+\]
+\[
+E = mc^2 + \frac{1}{2} \frac{p^2}{m} = \underbrace{\frac{p^2}{2m}}_{E_k} + \underbrace{mc^2}_{E_0}
+\]
+\[
+p = mv, \quad \frac{p^2}{2m} = \frac{mv^2}{2}
+\]
+\[
+E = E_k + E_0, \qquad Ψ = Ψ_0 e^{i(px - Et) / ℏ}
+\]
+\[
+\left( \left( - \frac{iE}{ℏ} \right)^2  - c^2 \left( \frac{ip}{ℏ} \right)^2 + \frac{1}{ℏ}m^2c^4  \right) Ψ(x,y) = 0
+\]
+Setter inn nytt utrykk for energi 
+\[
+    - \frac{1}{ℏ^2}\left(\underbrace{\left( \frac{p^2}{2m} + mc^2 \right) ^2 - p^2c^2 + (mc^2)^2}_{≠ 0} \right) Ψ(x,t) = 0
+\]
+Det fungerer ikke å bare bytte ut utrykket for energi. 
+\[
+Ψ = Ψ_0 e^{i(px - E_k t - E_0 t) / ℏ}
+\]
+\[
+\underbrace{e^{-iE_0t / ℏ}}_{θ}\quad \underbrace{Ψ_0 e^{i(px - E_k t) / ℏ}}_{Ψ_k} = 0
+\]
+
+\[
+\left( \frac{∂^2 }{∂ t^2} - c^2 \frac{∂^2 }{∂ x^2} + \frac{(mc^2)^2}{ℏ^2} \right) θ(t) Ψ_k(x,t) = 0
+\]
+\[
+Ψ_k \frac{∂^2}{∂ t^2} θ + 2 \frac{∂ }{∂ t}θ \frac{∂ Ψ_k}{∂ t} + θ\frac{∂^2 }{∂ t^2}Ψ_k - c^2 \frac{∂^2 }{∂ x^2} θ Ψ_k + \frac{(mc^2)^2}{ℏ^2} θ Ψ_k 
+\]
+\[
+\cancel{Ψ_k \left( \frac{-iE_0}{ℏ} \right) ^2 θ} + 2 \left( \frac{-iE_0}{ℏ} \right) θ \frac{∂ }{∂ t}Ψ_k + θ c^2 \frac{∂^2}{∂ x^2} Ψ_k + \cancel{\frac{(mc^2)^2}{ℏ^2} θ Ψ_k}
+\]
+\[
+2 \left( \frac{-iE_0}{ℏ} \right) \frac{∂ Ψ_k}{∂ t} + \frac{∂^2 Ψ_k}{∂ t^2} - c^2 \left( \frac{ip}{ℏ} \right) Ψ_k
+\]
+\[
+2 \left( \frac{-iE_0}{ℏ} \right) \left( \frac{-iE_0}{ℏ} \right) Ψ_k + \left( \frac{-iE_0}{ℏ} \right) ^2 Ψ_k + c^2 \frac{p^2}{ℏ^2} Ψ_k
+\]
+
+\[
+-2E_0 E_k Ψ_k - E_k ^2 Ψ_k + mc^2 \frac{p^2}{2m}Ψ_k
+\]
+\[
+\left( -2E_0 E_k - E_k ^2 +  2 E_0 E_k\right) ψ_k ≠ 0
+\]
+Dette går ikke opp. La oss ta bort ledde som ødelegger
+\[
+2 \left( \frac{-iE_0}{ℏ} \right) \frac{∂ Ψ_k}{∂ t} - c^2 \frac{∂^2 Ψ_k}{∂ x^2} = 0
+\]
+\[
+2 \left( - \frac{i m c^2}{ℏ} \right) \frac{∂ Ψ_k}{∂ t} - c^2 \frac{∂^2 Ψ_k}{∂ x^2} = 0
+\]
+\[
+iℏ \frac{∂ Ψ_k}{∂ t} + \frac{ℏ}{2m} \frac{∂^2 Ψ_k}{∂ x^2} = 0
+\]
+Dette er Schrödingerligningen for frie partikler

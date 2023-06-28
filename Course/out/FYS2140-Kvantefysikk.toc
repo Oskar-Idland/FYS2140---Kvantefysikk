@@ -1,0 +1,135 @@
+\babel@toc {norsk}{}\relax 
+<<<<<<< HEAD:Course/out/FYS2140-Kvantefysikk.toc
+\contentsline {part}{I\hspace {1em}Historisk Utvikling}{3}{part.1}%
+\contentsline {chapter}{\numberline {1}Bruddet med Klassisk Fysikk}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Hva er Kvantemekanikk?}{4}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Energikvantisering}{4}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Bølge-Partikkel-dualitet}{4}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Egentilstand og superposisjon}{4}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Heisenberg's uskarphetsrelasjon}{5}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Paulis eksklusjonsprinsipp}{5}{subsection.1.1.5}%
+\contentsline {section}{\numberline {1.2}Enheter i Kvantefysikk}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Lengde}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Energi}{5}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Masse}{6}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Andre Konstanter}{6}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Coulomb-potensialet}{6}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Nyttige Tabeller}{6}{subsection.1.2.6}%
+\contentsline {section}{\numberline {1.3}Planck's Kvantiseringshypotese}{8}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Utledning av Wiens Forskyvningslov}{12}{subsection.1.3.1}%
+\contentsline {chapter}{\numberline {2}Lysets Partikkelegenskaper}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Fotoelektrisk Effekt}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Röntgen-Stråling}{13}{section.2.2}%
+\contentsline {part}{II\hspace {1em}Forelesning Notater}{14}{part.2}%
+\contentsline {chapter}{\numberline {3}Lysets Partikkelegenskaper}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}02 Forelesnings Notater}{16}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Definisjoner}{16}{subsection.3.1.1}%
+\contentsline {subsubsection}{Sort legeme}{16}{section*.9}%
+\contentsline {subsubsection}{Frekvensfordeling $M_{ν}(T)$}{16}{section*.10}%
+\contentsline {subsubsection}{Radians $M(T)$}{16}{section*.11}%
+\contentsline {subsubsection}{Stående bølge}{16}{section*.12}%
+\contentsline {section}{\numberline {3.2}03 Forelesning Notater}{17}{section.3.2}%
+\contentsline {paragraph}{Sentrale Kunnskaper}{17}{section*.13}%
+\contentsline {subsection}{\numberline {3.2.1}Fotoelektrisk Effekt}{17}{subsection.3.2.1}%
+\contentsline {subsubsection}{Observasjon 1}{18}{section*.15}%
+\contentsline {subsubsection}{Observasjon 2}{18}{section*.17}%
+\contentsline {subsubsection}{Observasjon 3}{19}{section*.20}%
+\contentsline {paragraph}{Oppsummert}{19}{section*.21}%
+\contentsline {subsubsection}{Einsteins Forklaring}{19}{section*.22}%
+\contentsline {subsubsection}{Röntgen-Stråling}{20}{section*.23}%
+\contentsline {section}{\numberline {3.3}04 Forelesnings Notater}{21}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Compton-Spredning}{21}{subsection.3.3.1}%
+\contentsline {paragraph}{Sentrale kunnskaper}{21}{section*.26}%
+\contentsline {subsubsection}{Oppsett}{21}{section*.29}%
+\contentsline {subsubsection}{Forklaring}{22}{section*.31}%
+\contentsline {chapter}{\numberline {4}Bohr's Atommodell}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}05 Forelesnings Notater}{26}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Bohr's Atommodell}{26}{subsection.4.1.1}%
+\contentsline {subsubsection}{Thomson's Atommodell}{26}{section*.38}%
+\contentsline {subsubsection}{Rohterford's Atommodell}{26}{section*.39}%
+\contentsline {subsubsection}{Bohr's Atommodell}{26}{section*.40}%
+\contentsline {paragraph}{Antagelser}{27}{section*.41}%
+\contentsline {subsubsection}{Klassisk fysikk Coulomb-vekselvirkning}{27}{section*.42}%
+\contentsline {subsection}{\numberline {4.1.2}Franck-Hertz eksperimentet}{28}{subsection.4.1.2}%
+\contentsline {paragraph}{Oppsumering}{29}{section*.44}%
+\contentsline {chapter}{\numberline {5}Materiens Bølgeegenskaper}{30}{chapter.5}%
+\contentsline {section}{\numberline {5.1}06 Forelesnings Notater}{31}{section.5.1}%
+\contentsline {paragraph}{\underline {Sentrale Kunnskaper}}{31}{section*.45}%
+\contentsline {subsubsection}{de Broglies hyptotese og atom}{31}{section*.46}%
+\contentsline {paragraph}{Hypotese}{31}{section*.47}%
+\contentsline {paragraph}{Bølge}{31}{section*.48}%
+\contentsline {paragraph}{Oppsumering}{32}{section*.49}%
+\contentsline {subsubsection}{Dobbeltspalte-eksperimentet}{32}{section*.50}%
+\contentsline {paragraph}{Hidden variables - teorien}{33}{section*.51}%
+\contentsline {subsubsection}{Sanssynlighetstettheten}{33}{section*.52}%
+\contentsline {section}{\numberline {5.2}07 Forelesnings notater}{34}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Oppdagelsen av Schrödinger-ligningen}{34}{subsection.5.2.1}%
+\contentsline {paragraph}{\underline {Sentrale kunnskaper}}{34}{section*.53}%
+\contentsline {subsubsection}{Davisson-Germer-eksp.}{34}{section*.54}%
+\contentsline {subsubsection}{Thomsons elektrondiffraksjon}{34}{section*.55}%
+\contentsline {paragraph}{Vannbølge}{34}{section*.56}%
+\contentsline {paragraph}{Elektromagnetisk bølge}{34}{section*.57}%
+\contentsline {paragraph}{Maxwells likninger på flere former}{34}{section*.58}%
+\contentsline {paragraph}{Kvantemekanisk}{35}{section*.59}%
+\contentsline {paragraph}{Foton}{35}{section*.60}%
+\contentsline {paragraph}{Partikkel med masse $m > 0$}{35}{section*.61}%
+\contentsline {section}{\numberline {5.3}08 Forelesnings Notater}{38}{section.5.3}%
+\contentsline {paragraph}{\underline {Sentrale kunnskaper}}{38}{section*.62}%
+\contentsline {subsection}{\numberline {5.3.1}Tidsavhengige bølgeligninger}{38}{subsection.5.3.1}%
+\contentsline {paragraph}{Maxwells ligning for klassiske elektromagnetiske bølger (relativistisk)}{38}{section*.63}%
+\contentsline {paragraph}{Klein-Fock-Godronds relativistiske lignign for frie partikler med masse (spinn løse)}{38}{section*.64}%
+\contentsline {subsection}{\numberline {5.3.2}Bølgepakke for fri partikkel}{38}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Generell løsning av bølgepakke av planbølger}{39}{subsection.5.3.3}%
+\contentsline {paragraph}{Superposisjonering av egentilstander}{39}{section*.65}%
+\contentsline {subsection}{\numberline {5.3.4}Tolkninger}{39}{subsection.5.3.4}%
+\contentsline {paragraph}{Realist}{39}{section*.66}%
+\contentsline {paragraph}{Ortodoks / Københavnstolkningen}{39}{section*.67}%
+\contentsline {paragraph}{Agnostisk}{39}{section*.68}%
+\contentsline {section}{\numberline {5.4}09 Forelesnings Notater}{40}{section.5.4}%
+\contentsline {paragraph}{\underline {Sentrale kunnskaper}}{40}{section*.69}%
+\contentsline {paragraph}{Forventningsverdi}{40}{section*.70}%
+\contentsline {subsection}{\numberline {5.4.1}Forventningsverdi og Standardavvik for Partikler}{41}{subsection.5.4.1}%
+\contentsline {section}{\numberline {5.5}10 Forelesnings Notater}{42}{section.5.5}%
+\contentsline {paragraph}{\underline {Sentrale kunnkaper}}{42}{section*.72}%
+\contentsline {subsection}{\numberline {5.5.1}Potensialet til uendelig dyp brønn}{42}{subsection.5.5.1}%
+\contentsline {paragraph}{Generell bølgefunksjon}{42}{section*.73}%
+\contentsline {paragraph}{Triks for å spare tid}{43}{section*.74}%
+\contentsline {paragraph}{Cases}{43}{section*.75}%
+\contentsline {paragraph}{Typiske eksamensoppgaver}{45}{section*.76}%
+\contentsline {section}{\numberline {5.6}11 Forelesnings Notater}{46}{section.5.6}%
+\contentsline {paragraph}{Oppsumering av begreper}{48}{section*.85}%
+\contentsline {chapter}{\numberline {6}Formalisme}{49}{chapter.6}%
+\contentsline {section}{\numberline {6.1}17 Forelesnings Notater}{50}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Postulat}{50}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Teorier rundt bølgefunksjonen}{53}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Anvendelser}{53}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Kommutatorer}{53}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Uskarphetsrelasjoner}{53}{subsection.6.1.5}%
+\contentsline {subsubsection}{\underline {Oppsumering og forståelse}}{53}{section*.99}%
+=======
+\contentsline {part}{I\hspace {1em}Historisk Utvikling}{2}{part.1}%
+\contentsline {chapter}{\numberline {1}Bruddet med Klassisk Fysikk}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Hva er Kvantemekanikk?}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Energikvantisering}{3}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Bølge-Partikkel-dualitet}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Egentilstand og superposisjon}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Heisenberg's uskarphetsrelasjon}{4}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Paulis eksklusjonsprinsipp}{4}{subsection.1.1.5}%
+\contentsline {section}{\numberline {1.2}Enheter i Kvantefysikk}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Lengde}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Energi}{4}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Masse}{5}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Andre Konstanter}{5}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Coulomb-potensialet}{5}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Nyttige Tabeller}{5}{subsection.1.2.6}%
+\contentsline {section}{\numberline {1.3}Planck's Kvantiseringshypotese}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Utledning av Wiens Forskyvningslov}{11}{subsection.1.3.1}%
+\contentsline {part}{II\hspace {1em}Lecture Notes}{12}{part.2}%
+\contentsline {chapter}{\numberline {2}02 Forelesnings Notater}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Definisjoner}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Sort legeme}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Frekvensfordeling $M_{ν}(T)$}{13}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Radians $M(T)$}{13}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Stående bølge}{13}{subsection.2.1.4}%
+\contentsline {chapter}{\numberline {3}03 Forelesning Notater}{14}{chapter.3}%
+>>>>>>> parent of 85c40a3 (oblig 1):out/FYS2140-Kvantefysikk.toc

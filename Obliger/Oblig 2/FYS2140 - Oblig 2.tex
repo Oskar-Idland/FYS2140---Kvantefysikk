@@ -1,0 +1,179 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{enumerate}
+\newtheorem{theorem}{Theorem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pgfplots}
+\setlength{\parindent}{0cm}
+\usepackage{graphics}
+\usepackage{graphicx} % Required for including images
+\usepackage{subcaption}
+\usepackage{bigintcalc}
+\usepackage{pythonhighlight} %for pythonkode \begin{python}   \end{python}
+\usepackage{appendix}
+\usepackage{arydshln}
+\usepackage{physics}
+\usepackage{tikz-cd}
+\usepackage{booktabs} 
+\usepackage{adjustbox}
+\usepackage{mdframed}
+\usepackage{relsize}
+\usepackage{physics}
+\usepackage[thinc]{esdiff}
+\usepackage{fixltx2e}
+\usepackage{esint}  %for lukket-linje-integral
+\usepackage{xfrac} %for sfrac
+\usepackage{hyperref} %for linker, må ha med hypersetup
+\usepackage[noabbrev, nameinlink]{cleveref} % to be loaded after hyperref
+\usepackage{amssymb} %\mathbb{R} for reelle tall, \mathcal{B} for "matte"-font
+\usepackage{listings} %for kode/lstlisting
+\usepackage{verbatim}
+\usepackage{graphicx,wrapfig,lipsum,caption} %for wrapping av bilder
+\usepackage{mathtools} %for \abs{x}
+\usepackage[norsk]{babel}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\pagecolor[rgb]{0.075,0.075,0.075} \color[rgb]{1,1,1} %TODO: Slett når ferdig%
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\author{Oskar Idland}
+\title{FYS2140 - Oblig 2}
+\date{}
+\begin{document}
+\maketitle
+\newpage
+
+\section*{\underline{A Diskusjonsoppgaver om lysets partikkelegenskaper}}
+
+\subsection*{Oppgave 1}
+Ettersom effekten er lik i begge lasere produserer de like mye energi per sekund per arealenhet. Fargen rød har større bølgelengde enn grønn og et fotoner med fargen rød vil da ha lavere energi, og den rød laseren må produsere flere fotoner for å oppnå samme effekt. 
+
+\subsection*{Oppgave 2}
+Når intensiteten øker, men frekvensen er konstant vil det skytes ut fler fotoner som vil frigjøre flere elektroner. \underline{Svaret er derfor a)}. 
+  
+\subsection*{Oppgave 3}
+Ettersom vi måler at ingen elektroner frigjøres fra metall platen hjelper det ikke å øke intensiteten hvis frekvensen er konstant. Vi skyter bare ut flere fotoner som ikke har nok energi til å frigjøre elektronene. Jeg tolker spørsmålet som at frekvensen forblir konstant. \underline{Da er svaret c); ingenting endres}.  
+
+\subsection*{Oppgave 4}
+Energien til fotonet blir absorbert av elektronene som eksiterer de til et høyere energi nivå. Ved høy nok energi kan elektronene frigjøres fullstendig, og energien blir gjort om til kinetisk energi i elektronet. 
+
+
+\subsection*{Oppgave 5}
+I eksperimentet om fotoelektrisk effekt gjorde man flere observasjoner som ikke kunne forklares ved bølger. En la merke til at en økning i intensitet ikke endret den maksimale kinetiske energien til elektronene. Dette kan forklares ved å se på fotonene som pakker med energi som frigjør elektronene. Da vil ikke en økning i intensitet ha noe å si ettersom du bare skyter ut flere elektroner med for lite energi til å gi høyere kinetisk energi til elektronene. 
+
+\subsection*{Oppgave 6}
+Vi ser partikkelegenskapene til fotonene når de interagerer med grafitt målet. Her blir de absorbert og emittert med ca. like mye bevegelsesmengde og bølgelengde. Når fotonene treffer krystallen vil de kollidere med ett av dets mange lag som førerer til interferens mellom fotonene. Dette er en bølgeegenskap. 
+
+\newpage
+\section*{\underline{B Regneoppgaver}}
+\subsection*{Oppgave 7}
+\begin{enumerate}[a)]
+
+  \item 
+
+\[
+K_{\text{maks}} = \frac{hc}{λ} - ω_0  
+\]
+\[
+ \frac{1}{2} 0.511 \text{ MeV/c}^{2} ⋅  \ v^{2} = \frac{1240 \text{ nm eV}}{1 \text{ nm}} - 2.0 \text{ eV}
+\]
+\[
+v = 6.96\ c ⋅ 10^{-2}
+\]
+
+  \item Ettersom bare 10 \% av 50\% av lyset frigjør elektroner vet vi at bare 5\% av den totale intensiteten vi må fordele på elektronene for å se hvor mange elektroner blir frigjort per $m^{2}$ per sekund.  
+\[
+I = 0.05 ⋅ 3 ⋅  10^{-9} \text{ W/m}^{2} = 1.5 ⋅ 10^{-10} \text{ W/m}^{2} = 9.36 ⋅ 10^{8} \text{ eV m}^{-2}\text{s}^{-1}
+\]
+
+Vi finner energien $E$ til et foton.
+\[
+E = h \frac{c}{λ} = \frac{1240 \text{ nmeV}}{400 \text{ nm}} = 3.1 \text{ eV}
+\]
+Vi finner antallet fotoner $N_{γ}$ per sekund per $m^{2}$. 
+\[
+N_{γ} = \frac{I}{E} = \frac{9.36 \cdot 10^{8} \text{ eV m}^{-2}\text{s}^{-1}}{3.1 \text{ eV}} = 3.03 \cdot 10^{8} \text{ m}^{-2}\text{s}^{-1}
+\]
+For å finne den kinetiske energien finner vi energien i til hvert elektron.  
+\[
+K = hν - ω_0 = E - ω_0 = 3.1 \text{ eV} - 2.0 \text{ eV} = 1.1 \text{ eV}
+\]
+\end{enumerate}
+
+\subsection*{Oppgave 8}
+
+\begin{enumerate}[a)]
+\item
+Den kinetiske energien $p$ til fotonet er lik dets energi $E$. 
+\[
+E = \frac{hc}{v} = \frac{1240 \text{ nm eV}}{1 ⋅ 10^{-3} \text{ nm}} = 124 \text{ keV}
+\]
+Den bevegelsesmengden $p$ blir da 
+\[
+p = \frac{E}{c} = 124 \text{ keV/c}
+\]
+\item
+Vi finner bølgelengden $λ'$ ved formelen:
+\[
+λ' = λ + λ_c (1 - \cos θ) = 1 ⋅  10^{-11} + \frac{2.426 ⋅ 10^{-12}}{2} = 1.12 ⋅ 10^{-2} \text{ nm} 
+\]
+Den nye bevegelsesmengden $p'$ blir da
+\[
+p' = \frac{hc}{λ'} = \frac{1240 \text{ nm eV}}{1.12 ⋅ 10^{-2} \text{ nm}} = 111 \text{ keV/c}
+\]
+Den kinetiske energien $K_e'$ blir da 
+\[
+K_e' = p'c = 111 \text{ keV} 
+\]
+\item
+Vi bruker at bevegelsesmengde og kinetisk energi er bevarte størrelser, dekomponerer størrelsene og finner vinkelen til slutt. 
+\[
+p_{x} = p_{x}' + p_{e_{x}} ⇒ 124 \text{ keV/c} = \cos \left( 60^∘ \right) ⋅  111 \text{ eV/c} + p_{e_{x}}
+\]
+\[
+p_{e_{x}} = 118 \text{ keV/c}
+\]
+\[
+p_y = p_y' + p_{e_{Y}} ⇒ 0 = \sin \left( 60^∘ \right) ⋅  111 \text{ keV/c} + p_{e_{y}}
+\]
+\[
+p_{e_{y}} = - \frac{\sqrt{2}}{2} 111 \text{ eV/c} ≈ - 78.5 \text{ eV/c}
+\]
+\[
+p = \sqrt{p_{e_{x}}^2 + p_{e_{y}}^2} ≈ 118 \text{ keV/c}
+\]
+Kinetisk energi $K_e$ blir da 
+\[
+K_e = pc = 118 \text{ keV}
+\]
+Vinkelen $ϕ$ blir da 
+\[
+ϕ = \arctan \left( \frac{p_{e_{y}}}{p_{e_{x}}} \right) = 1.57^∘
+\]
+
+\end{enumerate}
+
+\end{document}

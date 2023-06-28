@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{enumerate}
+\newtheorem{theorem}{Theorem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pgfplots}
+\setlength{\parindent}{0cm}
+\usepackage{graphics}
+\usepackage{graphicx} % Required for including images
+\usepackage{subcaption}
+\usepackage{bigintcalc}
+\usepackage{pythonhighlight} %for pythonkode \begin{python}   \end{python}
+\usepackage{appendix}
+\usepackage{arydshln}
+\usepackage{physics}
+\usepackage{tikz-cd}
+\usepackage{booktabs} 
+\usepackage{adjustbox}
+\usepackage{mdframed}
+\usepackage{relsize}
+\usepackage{physics}
+\usepackage[thinc]{esdiff}
+\usepackage{fixltx2e}
+\usepackage{esint}  %for lukket-linje-integral
+\usepackage{xfrac} %for sfrac
+\usepackage{hyperref} %for linker, må ha med hypersetup
+\usepackage[noabbrev, nameinlink]{cleveref} % to be loaded after hyperref
+\usepackage{amssymb} %\mathbb{R} for reelle tall, \mathcal{B} for "matte"-font
+\usepackage{listings} %for kode/lstlisting
+\usepackage{verbatim}
+\usepackage{graphicx,wrapfig,lipsum,caption} %for wrapping av bilder
+\usepackage{mathtools} %for \abs{x}
+\usepackage[norsk]{babel}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\author{Oskar Idland}
+\title{Oblig 11}
+\date{}
+\begin{document}
+\maketitle
+\newpage
+\section*{\underline{A Diskusjonsoppgaver}}
+\subsection*{Oppgave 1}
+\subsubsection*{a)}
+Ettersom sølv-atomet har ett enslig elektron i sitt høyeste energinivå, kan det både ha spinn opp og ned. Selv om atomet ikke har noe netto ladning, vil det ene elektronet sitt spin innstille seg retningen til magnetfeltet. Hvis elektronets spinn peker oppover, vil atomet tiltrekkes den negative topp-magneten og atomet vil bevege seg oppover. Hvis elektronets spinn peker nedover, vil atomet dyttes fra den negative topp-magneten og atomet beveger seg nedover. 
+
+Fra Bohr's atommodell tenkte man at elektroner roterer om kjerne til atomet og vil fungere som en magnetisk dipol. Dette ville ført til at at dipolene med nord pekene oppover ville gått opp, nord pekene nedover tille gått ned, og alt i mellom ville gått et sted i mellom uniformt fordelt. Stern-Gerlach eksperimentet viste at dette ikke var tilfelle, og at atomene klumpet seg i regioner høyt opp eller lavt nede. Dette viste at det måtte være noe diskret med elektronets påvirking av et magnetfelt. 
+
+\subsubsection*{b)}
+Når atomene går igjennom to felt i samme retning vil de forbli i samme orientering og mønsteret vil skjermen vil være \underline{alternativ D: To punkter på en vertikal linje}
+
+\subsubsection*{c)}
+Selv om atomene alle er orientert i $x$-retning, er det $50\%$ sjanse for at de orienterer seg i $± z$-retning når de kommer til det andre magnetfeltet. Da får vi et mønster av to prikker på en vertikal linje.
+
+\subsubsection*{d)}
+Når vi slipper gjennom alle atomene vil først noen gå til høyere, og noen til venstre. Når de kommer til felt nummer to vil noen gå opp og andre ned. 
+
+Dette vil gi \underline{D: et mønster av fire prikker i et boks mønster}. 
+
+
+\subsection*{Oppgave 2}
+\subsubsection*{a)}
+Spin delen til en singlet er asymmetrisk, og derfor må rom-delen være symmetrisk for at bølgefunksjonen skal være asymmetrisk
+
+\subsubsection*{b)}
+Hvis det ene elektronet har $ℏ / 2$ som spinn, må det andre ha $-ℏ / 2$, så sannsynligheten er $0$. 
+
+\subsubsection*{c)}
+Vi vet at 
+\[
+S_z = ℏm_s = \frac{ℏ}{2} 
+\]
+for det ene elektronet. Da må $m_s$ være lik $1 / 2$ for det ene elektronet og $- 1 / 2$ for det andre elektronet. 
+
+\subsubsection*{d)}
+Sannsynligheten for å måle spinnet i $x,y$ og $z$ retning er uavhengig av hverandre. Selv om vi vet $S_y$, er det like stor sannsynlighet for at $S_x$ er opp($ℏ / 2$) eller ned($-ℏ / 2$).
+
+
+\section*{\underline{B Regneoppgaver}}
+\subsection*{Oppgave 3}
+\subsubsection*{a)}
+\[
+ω(k) = \frac{ℏk^2}{2m} 
+\]
+\subsubsection*{b)}
+Ettersom $s= 1 / 2$ er det to mulige verdier for $\left\{m_s ∈ [-s, s]\ |\ m_s ∈ ℤ\right\}$, nemlig  $1 / 2$ og $- 1 / 2$. 
+
+$\hat{S}^2$ og $\hat{S}_z$ er egenfunksjoner ettersom når de virker på funksjonen $ψ$ får vi samme funksjonen tilbake, bare multiplisert med en konstant.
+
+\subsubsection*{c)}
+Vi vet at usikkerheten i nøytronets posisjon $σ_x$ er på $5$ fm. Vi bruker uskarphetsrelasjonen mellom posisjon og bevegelsesmengde til å finne usikkerheten i partikkelens hastighet $σ_v = σ_p / m$.
+\[
+σ_v = \frac{ℏm}{2σ_x} = \frac{6.582 ⋅ 10^{-16} m}{2 ⋅ 5 ⋅ 10^{-15}} = m ⋅ 6.582 ⋅ 10^{-2} 
+\] 
+
+\subsubsection*{d)}
+
+
+
+
+\end{document}

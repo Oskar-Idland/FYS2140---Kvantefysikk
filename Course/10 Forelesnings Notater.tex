@@ -1,0 +1,164 @@
+\section{10 Forelesnings Notater}
+\paragraph{\underline{Sentrale kunnkaper}}
+\begin{enumerate}
+    \item Sette opp og utlede løsning til TUSL for uendelig dyp brønn, beregne egentilstandene og forstå ortogonalitet og kronecker delta.
+    \item Lage superposisjon av egentilstander
+    \item Forstå figurer der vi kombinerer potensial, energi og bølgefunksjon, beregne $\left<h\right>, σ_{H}$ og sannsynligheten for å måle n-te tilstand
+    \item Trig funksjoner, deres integrerte, deriverte og sum
+\end{enumerate}
+
+\subsection{Potensialet til uendelig dyp brønn}
+\[
+\hat{Q} → \hat{H} = \left(- \frac{ℏ^2}{2m}\frac{\mathrm{d}^2}{\mathrm{d}x^2} + V(x)\right) \quad , \quad Ψ_{E} ≡ Ψ_{n}(x,t) = ψ_n(x)f_n(t)
+\]
+Vi separerer bølgefunksjonen i to deler, en som er avhengig av posisjon og en som er avhengig av tid. 
+\[
+\hat{H}ψ_n(x) = E_nψ_n(x) \quad , \quad φ_n(t) = E^{-iE_{n} t / ℏ}
+\]
+\paragraph{Generell bølgefunksjon}
+\[
+Ψ(x,t) = \sum_{n=1}^{\infty}c_nψ_n(x)e^{-iE_nt/ℏ}
+\]
+Ettersom vi har separert tid og rom kan vi sette $t = 0$ for å gjøre om eksponenten til 1. Da blir bølgefunksjonen
+\[
+Ψ(x,0) = \sum_{n=1}^{}c_nψ_n(x) \quad , \quad ∑_{n}^{} \left|c_n\right|^2 = 1 = ∫ ψ^{*}_n(x)ψ_n(x,0)\ dx
+\]
+$\left|c_n\right|^2 $ er sannsynligheten for å måle n-te tilstand. Bølgefunksjonen er for abstrakt til å finne energien, men vi kan finne gjennomsnittsenergien $\left<H\right>$. 
+\[
+\left<H\right> = ∫ Ψ^{*}(x,t)\hat{H}Ψ(x,t)\ dx = ∑_{n}^{} E_n \left|c_n\right|^2
+\]
+Hvis alle tilstandene har samme energi kan dette faktoriserer ut og vi får. 
+\[
+Ψ(x,t) = \left(∑_{}^{} c_n ψ_n(x)\right)e^{-iE_nt/ℏ}
+\]
+\[
+\left<p\right> = ∫ Ψ^{*}(x,t)\hat{p}Ψ(x,t)\ dx ≠  ∑_{n}^{} p_n \left|c_n\right|^2
+\]
+Det går ikke alltid å summere som vanlig når vi skal finne forventningsverdien til bevegelsesmengden $p$. 
+
+\paragraph{Triks for å spare tid}
+Annta et potensialet som variere, men er konstant i noen intervaller. Da vil TUSL gitt ved 
+\[
+\left(- \frac{ℏ^2}{2m}\frac{\mathrm{d}^2}{\mathrm{d}x^2} + V_0\right)ψ_n(x) = E_nψ_n(x)
+\]
+\[
+- \frac{ℏ^2}{2m}\frac{\mathrm{d}^2}{\mathrm{d}x^2} ψ_n = \underbrace{\left(E_n - V_0\right)}_{K_n} ψ_n(x)
+\]
+\[
+ψ_n(x) = A e^{i k_nx} + B e^{-i k_nx}
+\]
+\[
+K_n = E - V_0 = \frac{ℏ^2 k_n^2}{2m} ⇒ k_n = \sqrt{\frac{2m}{ℏ^2}(E_n - V_0)}
+\]
+Dette er mulig ettersom TULS er lokal med hensyn på $x$. Konstantene A og B er globale for hele funksjonen. 
+Vi har noen forskjellige cenario. 
+\begin{enumerate}
+    \item $E > V_0$\\
+    Dette er det vanligste tilfellet. Da vil $k_n$ være reelt og $ψ_n(x)$ er planbølgen. 
+    \item $E < V_0$\\
+    her er $k_n$ imaginært $κ_n = i k_n = \displaystyle \sqrt{- \frac{2m(E- V_0)}{ℏ^2}}$ som er reelt.\\
+    $ψ_n(x) = \underbrace{A e^{κ_n x} + Be^{-κ_n x}}_{\text{Reelle eksp. funk.}}$.\\ 
+    Det er bare i et lite område hvor energien $E$ er mindre enn potensiell energi $V$ 
+    \item $E = V_0$
+    $ψ_n(x) = A + Bx$
+\end{enumerate}
+
+\paragraph{Cases}
+\[
+V(x) = 0 \quad , \quad 0 \le x \le a \quad , \quad V(x) = ∞
+\]
+Vi skal finne en bølgefunksjon som er kontinuerlig både i og utenfor brønn. I brønnen er funksjonen 
+\[
+ψ_n(x) = A e^{i k_nx} + B e^{-i k_nx}
+\]
+Utenfor er den 0. Vi løser deretter 
+\[
+ψ(0) = 0 ⇒ B = -A
+\]
+Så løser vi for grensene 
+\[
+ψ(a) = A e^{i k_na} - A e^{-i k_na} = A \left(e^{i k_na} - e^{-i k_na}\right)
+\]
+Dette kjenner vi igjen som en sinus funksjon. 
+\[
+2iA\sin (k_na) = 0 ⇒ k_n = \frac{nπ}{a} \quad , \quad n = 1, 2, 3 \ldots , ∞
+\]
+\[
+E_n = \frac{ℏ^2 k_n^2}{2m} = \frac{h^2}{2m} \frac{π^2}{a^2}n^2
+\]
+Vi normaliserer sinus funksjonen på følgende måte. 
+\[
+C \sin (k_na) = 0
+\]
+\[
+1 = ∫ ψ_n^{*}ψ_n \ \mathrm{d}x = ∫_{0}^{a} C \sin (k_nx) ⋅ C \sin (k_nx) \ \mathrm{d}x = C^2 ∫_{0}^{a} \sin ^2 (k_n x) \ \mathrm{d}x
+\]
+\[
+1 = C^2 \left.\left(\frac{x}{2} - \frac{1}{4 k_n} \sin (2 k_nx)\right)\right\rvert_{0}^{a} = C^2 \left(\frac{a}{2}\right) ⇒ C = \sqrt{\frac{2}{a}}
+\]
+Dette gir bølgefunksjonen
+\[
+ψ_n(x) = \sqrt{\frac{2}{a}} \sin \left(\frac{nπ}{a}x\right) \quad , \quad n = 1, 2, 3 \ldots 
+\]
+Egenfunksjonene er ortogonale og produktet vil alltid være 0, hvis ikke de har samme tilstand. 
+\[
+δ_{nm} = \begin{cases}
+  1, &\text{ if }n = m\\
+  0, &\text{ if }n ≠  m
+\end{cases}
+\]
+En grei regel er at
+\[
+E_1 = \frac{ℏ^2 k^2}{2m} \frac{π^2}{a^2} \ \quad , \quad E_2 = E_1 ⋅ 2^2 \quad , \quad E_3 = E_1 ⋅ 3^2 \quad , \quad E_4 = E_1 ⋅ 4^2 \quad , \quad \ldots
+\]
+Da kan vi finne bølgefunksjonen
+\[
+Ψ(x,0) = ∑_{n}^{} c_n ψ_n(x) = ∑_{n}^{} c_n \sqrt{\frac{2}{a}} \sin \left(\frac{nπ}{a}x\right)
+\]
+\paragraph{Typiske eksamensoppgaver}
+\begin{enumerate}
+    \item å lage $Ψ(x,0)$ fra egenfunksjoner. 
+    \item Anta $Ψ(x,0)$ hva er sannsynligheten at vi får n-te tilstand ved måling? Da må vi beregne $c_n$. ved $\displaystyle c_n = ∫ ψ_n^{*}(x) Ψ(x,0) \ \mathrm{d}x \frac{2}{nπ} \left(1 - \cos \left(\frac{nπ}{2}\right)\right)$
+\end{enumerate}
+
+\[
+Ψ(x,0) = 
+\begin{cases}
+    \sqrt{\frac{2}{a}} &\text{ når } 0 \le x \le a / 2 \\
+    0              & \text{ ellers } 
+\end{cases}
+\]
+
+De første tre tilstandene er mye mer sannsynlig enn resterende og er ofte nok for en god approksimasjon. 
+
+
+\subsection*{Dirac-delta-funksjonen}
+\[
+δ(x-a) = 
+\begin{cases}
+  ∞, &\text{ if }x = a\\
+  0, &\text{ if }x ≠  a 
+\end{cases}
+\]
+\[
+∫_{-∞}^{∞} δ(x-a) \ \mathrm{d}x = 1
+\]
+\[
+∫_{-∞}^{∞} f(x) ϕ(x-a) \ \mathrm{d}x = f(a)
+\]
+\subsection*{Ortogonale Egenfunksjoner}
+\[
+∫ ψ_n^{*}(x) ψ_m(x) \ \mathrm{d}x = δ_{nm}
+\]
+\[
+Ψ(x,0) = ∑_{n}^{} c_n ψ_n(x)
+\]
+\[
+ψ_m = ∑_{n}^{} c_n ψ_n \quad , \quad c_n = \begin{cases}
+  1, &\text{ når }m = n\\
+  0, &\text{ ellers }
+\end{cases}
+\]
+\[
+1 = ∫ ψ_m^{*}(x) ψ_m(x) \ \mathrm{d}x \overset{\underset{\text{antar}}{}}{=} ∫ ψ_m^{*} ∑_{n ≠ m}^{} c_n ψ_n \ \mathrm{d}x = ∑_{n ≠ m}^{} c_n \underbrace{∫ ψ_m^{*}ψ_n \ \mathrm{d}x}_{δ_{mn}} = 0
+\]
